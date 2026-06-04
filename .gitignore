@@ -1,0 +1,6 @@
+.DS_Store
+assets/_render/
+assets/_venv/
+assets/_*.py
+assets/_sheet.png
+node_modules/
