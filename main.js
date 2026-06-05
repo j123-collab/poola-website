@@ -129,7 +129,7 @@
 
   /* ---- hero phone + tile 3D tilt (desktop) ------------------------------*/
   if (fine && !reduce) {
-    var phone = document.querySelector(".hero__phone img");
+    var phone = document.querySelector(".hero__phone--front img") || document.querySelector(".hero__phone img");
     var stage = document.querySelector(".hero__stage");
     if (phone && stage) {
       stage.addEventListener("mousemove", function (e) {
