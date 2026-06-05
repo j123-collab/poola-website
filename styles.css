@@ -225,7 +225,12 @@ body::after {
 .hero { position: relative; padding-block: clamp(54px, 8vw, 120px) clamp(60px, 9vw, 130px); overflow: hidden; }
 .hero > .container { position: relative; z-index: 2; }
 .hero__grid { display: grid; grid-template-columns: 1.04fr .96fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
-.hero__wordmark { width: min(300px, 64%); margin-bottom: 24px; }
+/* brand lockup: waves mark + wordmark */
+.brandlock { display: inline-flex; align-items: center; gap: .42em; line-height: 1; }
+.brandlock img { height: 1.05em; width: auto; }
+.brandlock .wm { font-family: var(--font-display); font-weight: 600; letter-spacing: -.045em; }
+.brandlock--hero { font-size: clamp(1.85rem, 4.2vw, 2.8rem); margin-bottom: 22px; }
+.brandlock--footer { font-size: 1.9rem; margin-bottom: 16px; color: #fff; }
 .hero h1 { font-size: var(--fs-h1); letter-spacing: -.045em; margin-bottom: 20px; }
 .hero h1 .accent { background: linear-gradient(120deg, var(--teal-bright), var(--aqua) 60%, var(--teal-deep)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero__sub { font-size: clamp(1.08rem, 1.6vw, 1.32rem); color: var(--ink-soft); max-width: 46ch; margin-bottom: 30px; line-height: 1.55; }
@@ -387,7 +392,7 @@ body::after {
 .footer__cap { font-family: var(--font-display); font-weight: 600; font-size: clamp(2.4rem, 7vw, 5rem); letter-spacing: -.045em; line-height: 1; margin-bottom: 48px; }
 .footer__cap span { background: linear-gradient(120deg, var(--aqua), var(--teal-bright)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .footer__grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; }
-.footer__brand img { width: 150px; margin-bottom: 16px; }
+.footer__brand .brandlock { margin-bottom: 16px; }
 .footer__brand p { color: #c9c2b5; max-width: 34ch; font-size: .95rem; }
 .footer h4 { font-family: var(--font-display); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--aqua); margin-bottom: 14px; }
 .footer a { color: #c9c2b5; display: block; padding: 4px 0; font-size: .95rem; transition: color .2s; }

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Poola">
+  <defs>
+    <linearGradient id="poolaTeal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2ba6bb"/>
+      <stop offset="1" stop-color="#176573"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#poolaTeal)"/>
+  <rect x="2" y="2" width="60" height="30" rx="16" fill="#ffffff" opacity=".08"/>
+  <g stroke="#ffffff" stroke-width="3.6" stroke-linecap="round" fill="none">
+    <path d="M15 24 q5.5 -4 11 0 q5.5 4 11 0 q5.5 -4 11 0"/>
+    <path d="M15 33 q5.5 -4 11 0 q5.5 4 11 0 q5.5 -4 11 0"/>
+    <path d="M15 42 q5.5 -4 11 0 q5.5 4 11 0 q5.5 -4 11 0"/>
+  </g>
+</svg>
