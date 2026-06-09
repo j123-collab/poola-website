@@ -1,0 +1,5 @@
+.git
+.gitignore
+.assetsignore
+node_modules
+*.md
