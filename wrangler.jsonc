@@ -1,0 +1,9 @@
+{
+  // Poola marketing site — static assets served by Cloudflare Workers.
+  // Deploy with:  npx wrangler deploy   (run from this folder)
+  "name": "poola-website",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./"
+  }
+}
