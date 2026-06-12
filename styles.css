@@ -1758,6 +1758,41 @@ p {
   font-weight: 700;
 }
 
+.shop-submit-strip {
+  padding-block: 28px;
+  background: var(--ink);
+}
+
+.shop-submit-strip__inner {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.82fr) minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding-block: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--white);
+}
+
+.shop-submit-strip .kicker {
+  margin-bottom: 8px;
+  color: var(--aqua);
+}
+
+.shop-submit-strip h2 {
+  font-size: 2rem;
+}
+
+.shop-submit-strip p:not(.kicker) {
+  max-width: 62ch;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.shop-submit-strip .btn--primary {
+  color: var(--ink);
+  background: var(--white);
+}
+
 .shop-preview--stand span {
   position: absolute;
   left: 50%;
@@ -2572,6 +2607,15 @@ p {
     min-height: 240px;
   }
 
+  .shop-submit-strip__inner {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .shop-submit-strip .btn {
+    width: max-content;
+  }
+
   .download-card {
     min-height: 250px;
   }
@@ -2761,6 +2805,10 @@ p {
 
   .shop-card dl {
     grid-template-columns: 1fr;
+  }
+
+  .shop-submit-strip .btn {
+    width: 100%;
   }
 
   .shop-hero__facts {
