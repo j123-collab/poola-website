@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Poola - All crowd-sourcing. One powerful audience.</title>
-<meta name="description" content="Download Poola for iOS, Android, Windows, macOS and Linux. Back causes, creators, projects and communities with funds plus People Power.">
+<meta name="description" content="Open Poola on the web or download Poola for iOS, Android, Windows, macOS and Linux. Back causes, creators, projects and communities with funds plus People Power.">
 <meta property="og:title" content="Poola - People Power for every crowd">
 <meta property="og:description" content="All crowd-sourcing. One powerful audience. Back the things you love with funds and People Power.">
 <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="styles.css?v=stripe-refactor-2">
+<link rel="stylesheet" href="styles.css?v=stripe-refactor-11">
 </head>
 <body>
 <div class="progress" id="progress"></div>
@@ -26,8 +26,9 @@
     <nav class="nav__links" id="navLinks">
       <a href="index.html" class="is-active">Home</a>
       <a href="how-it-works.html">How it works</a>
+      <a href="shop.html">Shop</a>
       <a href="about.html">About</a>
-      <a class="btn btn--primary nav__cta" href="#downloads" data-magnetic>Download</a>
+      <a class="btn btn--primary nav__cta" href="#downloads" data-magnetic><span class="label-web">Open web app</span><span class="label-mobile">Download</span></a>
     </nav>
     <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><span></span></button>
   </div>
@@ -41,43 +42,43 @@
         <h1>All crowd-sourcing. One powerful audience.</h1>
         <p class="hero__sub">Poola helps people back the causes, creators, neighbourhoods and ideas they care about with money, skills, resources, time and voice.</p>
         <div class="hero-actions">
-          <a class="btn btn--primary" href="#downloads" data-magnetic>Download Poola</a>
+          <a class="btn btn--primary" href="#downloads" data-magnetic>Pitch me</a>
           <a class="btn btn--ghost" href="how-it-works.html">See how it works</a>
         </div>
         <div class="hero-proof" aria-label="Poola product signals">
-          <span><strong>5</strong><em>platforms planned</em></span>
+          <span><strong>6</strong><em>platform options</em></span>
           <span><strong>6</strong><em>ways to contribute</em></span>
           <span><strong>2</strong><em>progress signals</em></span>
         </div>
       </div>
 
-      <aside class="hero-stack" data-tilt data-reveal="right" aria-label="Poola product preview">
+      <aside class="hero-stack" data-pool-rotator data-tilt data-reveal="right" aria-label="Poola product preview">
         <div class="hero-card hero-card--command">
           <div class="command-dots"><span></span><span></span><span></span></div>
-          <code>poola.create({ contribution: "people_power" })</code>
+          <code data-pool-command>poola.create({ pool: "kitchen" })</code>
         </div>
         <div class="hero-panel">
           <div class="panel-top">
             <span>Live Pool</span>
-            <strong>Community kitchen relaunch</strong>
+            <strong data-pool-title>Community kitchen relaunch</strong>
           </div>
           <div class="hero-panel__grid">
-            <div><span>Funds</span><strong>62%</strong></div>
-            <div><span>Power</span><strong>91%</strong></div>
-            <div><span>Backers</span><strong>428</strong></div>
+            <div><span>Funds</span><strong data-pool-funds>62%</strong></div>
+            <div><span>Power</span><strong data-pool-power>91%</strong></div>
+            <div><span>Backers</span><strong data-pool-backers>428</strong></div>
           </div>
           <div class="impact-meter">
             <span>Money raised</span>
-            <b><i style="width:62%"></i></b>
+            <b><i data-pool-funds-bar style="width:62%"></i></b>
           </div>
           <div class="impact-meter impact-meter--aqua">
             <span>Skills, time, resources and voices</span>
-            <b><i style="width:91%"></i></b>
+            <b><i data-pool-power-bar style="width:91%"></i></b>
           </div>
           <div class="mini-feed">
-            <div><i class="fa-solid fa-screwdriver-wrench"></i><span>12 people offered skills</span></div>
-            <div><i class="fa-solid fa-box-open"></i><span>8 resources pledged</span></div>
-            <div><i class="fa-solid fa-bullhorn"></i><span>240 signatures added</span></div>
+            <div><i data-pool-feed-icon="0" class="fa-solid fa-screwdriver-wrench"></i><span data-pool-feed="0">12 people offered skills</span></div>
+            <div><i data-pool-feed-icon="1" class="fa-solid fa-box-open"></i><span data-pool-feed="1">8 resources pledged</span></div>
+            <div><i data-pool-feed-icon="2" class="fa-solid fa-bullhorn"></i><span data-pool-feed="2">240 signatures added</span></div>
           </div>
         </div>
       </aside>
@@ -255,24 +256,31 @@
 
   <section class="section download-hub" id="downloads">
     <div class="container download-hub__head" data-reveal>
-      <p class="signal"><span></span> Download Poola</p>
+      <p class="signal"><span></span> Open or download Poola</p>
       <h2>Choose your platform.</h2>
-      <p>Poola is being packaged for mobile and desktop. Download buttons are marked honestly until store pages and app files are ready.</p>
+      <p>Open Poola in the browser, or download the mobile and desktop apps when store pages and app files are ready.</p>
     </div>
     <div class="container download-grid" data-reveal-group>
+      <article class="download-card download-card--web" data-reveal>
+        <i class="fa-solid fa-globe"></i>
+        <span>Browser</span>
+        <h3>Poola for Web</h3>
+        <p>Start from any modern browser with the same Funds plus People Power model.</p>
+        <button class="btn btn--primary" type="button" data-download="Web">Open in web</button>
+      </article>
       <article class="download-card download-card--featured" data-reveal>
         <i class="fa-brands fa-apple"></i>
         <span>iPhone and iPad</span>
         <h3>Poola for iOS</h3>
         <p>Designed for discovering, backing and following Pools on the go.</p>
-        <button class="btn btn--primary" type="button" data-download="iOS">Coming soon</button>
+        <button class="btn btn--primary" type="button" data-download="iOS">Download</button>
       </article>
       <article class="download-card" data-reveal>
         <i class="fa-brands fa-android"></i>
         <span>Android phones</span>
         <h3>Poola for Android</h3>
         <p>The same People Power model for Android supporters and Pool starters.</p>
-        <button class="btn btn--ghost" type="button" data-download="Android">Coming soon</button>
+        <button class="btn btn--ghost" type="button" data-download="Android">Download</button>
       </article>
       <article class="download-card" data-reveal>
         <i class="fa-brands fa-windows"></i>
@@ -308,6 +316,7 @@
     </div>
     <div class="footer__links">
       <a href="how-it-works.html">How it works</a>
+      <a href="shop.html">Shop</a>
       <a href="about.html">About</a>
       <a href="#downloads">Download</a>
     </div>
@@ -315,6 +324,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=stripe-refactor-2"></script>
+<script src="main.js?v=stripe-refactor-11"></script>
 </body>
 </html>

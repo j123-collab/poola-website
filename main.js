@@ -1,7 +1,7 @@
 /* ==========================================================================
    Poola - premium interactions
-   Navigation, reveal motion, meters, contribution engine, product tour,
-   desktop tilt, magnetic CTAs and download availability states.
+   Navigation, reveal motion, hero Pool examples, meters, contribution engine,
+   product tour, desktop tilt, magnetic CTAs, download states and shop previews.
    ========================================================================== */
 (function () {
   "use strict";
@@ -113,6 +113,134 @@
     meterbars.forEach(function (el) { meterObserver.observe(el); });
   } else {
     meterbars.forEach(fillMeterbar);
+  }
+
+  var heroPools = [
+    {
+      command: 'poola.create({ pool: "kitchen" })',
+      title: "Community kitchen relaunch",
+      funds: 62,
+      power: 91,
+      backers: "428",
+      feed: [
+        { icon: "fa-screwdriver-wrench", text: "12 people offered skills" },
+        { icon: "fa-box-open", text: "8 resources pledged" },
+        { icon: "fa-bullhorn", text: "240 signatures added" }
+      ]
+    },
+    {
+      command: 'poola.create({ pool: "playground" })',
+      title: "Neighbourhood playground repair",
+      funds: 48,
+      power: 76,
+      backers: "312",
+      feed: [
+        { icon: "fa-hammer", text: "18 weekend volunteers" },
+        { icon: "fa-box-open", text: "12 toolkits pledged" },
+        { icon: "fa-handshake", text: "3 local sponsors joined" }
+      ]
+    },
+    {
+      command: 'poola.create({ pool: "game" })',
+      title: "Indie game launch fund",
+      funds: 84,
+      power: 67,
+      backers: "1.2k",
+      feed: [
+        { icon: "fa-gamepad", text: "24 playtesters joined" },
+        { icon: "fa-language", text: "11 translators offered help" },
+        { icon: "fa-coins", text: "18.6k raised for production" }
+      ]
+    },
+    {
+      command: 'poola.create({ pool: "rescue" })',
+      title: "Animal rescue transport van",
+      funds: 71,
+      power: 88,
+      backers: "659",
+      feed: [
+        { icon: "fa-house", text: "34 foster homes offered" },
+        { icon: "fa-box-open", text: "9 crates and carriers donated" },
+        { icon: "fa-signature", text: "212 support signatures" }
+      ]
+    },
+    {
+      command: 'poola.create({ pool: "film" })',
+      title: "Student climate film",
+      funds: 53,
+      power: 94,
+      backers: "782",
+      feed: [
+        { icon: "fa-video", text: "16 editors and camera ops" },
+        { icon: "fa-location-dot", text: "4 venues pledged space" },
+        { icon: "fa-ticket", text: "1.8k launch RSVPs" }
+      ]
+    }
+  ];
+
+  var poolRotator = document.querySelector("[data-pool-rotator]");
+  if (poolRotator && heroPools.length) {
+    var poolIndex = 0;
+    var poolTimer = null;
+    var poolEls = {
+      command: poolRotator.querySelector("[data-pool-command]"),
+      title: poolRotator.querySelector("[data-pool-title]"),
+      funds: poolRotator.querySelector("[data-pool-funds]"),
+      power: poolRotator.querySelector("[data-pool-power]"),
+      backers: poolRotator.querySelector("[data-pool-backers]"),
+      fundsBar: poolRotator.querySelector("[data-pool-funds-bar]"),
+      powerBar: poolRotator.querySelector("[data-pool-power-bar]"),
+      feed: poolRotator.querySelectorAll("[data-pool-feed]"),
+      feedIcons: poolRotator.querySelectorAll("[data-pool-feed-icon]")
+    };
+
+    function applyHeroPool(pool) {
+      if (poolEls.command) poolEls.command.textContent = pool.command;
+      if (poolEls.title) poolEls.title.textContent = pool.title;
+      if (poolEls.funds) poolEls.funds.textContent = pool.funds + "%";
+      if (poolEls.power) poolEls.power.textContent = pool.power + "%";
+      if (poolEls.backers) poolEls.backers.textContent = pool.backers;
+      if (poolEls.fundsBar) poolEls.fundsBar.style.width = pool.funds + "%";
+      if (poolEls.powerBar) poolEls.powerBar.style.width = pool.power + "%";
+
+      pool.feed.forEach(function (item, index) {
+        if (poolEls.feed[index]) poolEls.feed[index].textContent = item.text;
+        if (poolEls.feedIcons[index]) poolEls.feedIcons[index].className = "fa-solid " + item.icon;
+      });
+    }
+
+    function showHeroPool(index, animate) {
+      var pool = heroPools[index % heroPools.length];
+      if (!animate || reduce) {
+        applyHeroPool(pool);
+        return;
+      }
+
+      poolRotator.classList.add("is-content-changing");
+      window.setTimeout(function () {
+        applyHeroPool(pool);
+        poolRotator.classList.remove("is-content-changing");
+      }, 210);
+    }
+
+    function startHeroPools() {
+      if (reduce || poolTimer) return;
+      poolTimer = window.setInterval(function () {
+        poolIndex = (poolIndex + 1) % heroPools.length;
+        showHeroPool(poolIndex, true);
+      }, 5200);
+    }
+
+    function stopHeroPools() {
+      if (!poolTimer) return;
+      window.clearInterval(poolTimer);
+      poolTimer = null;
+    }
+
+    showHeroPool(poolIndex, false);
+    startHeroPools();
+    poolRotator.addEventListener("focusin", stopHeroPools);
+    poolRotator.addEventListener("focusout", startHeroPools);
   }
 
   var engine = {
@@ -280,10 +408,28 @@
     var platform = button.getAttribute("data-download") || "this platform";
     var status = document.querySelector("[data-download-status]");
     if (status) {
-      status.textContent = platform + " downloads are being prepared. Store links and installers will appear here when builds are ready.";
+      if (platform === "Web") {
+        status.textContent = "Poola for Web is being prepared. The web app will open from here when public access is ready.";
+      } else {
+        status.textContent = platform + " downloads are being prepared. Store links and installers will appear here when builds are ready.";
+      }
     }
     document.querySelectorAll("[data-download]").forEach(function (item) {
       item.classList.toggle("is-selected", item === button);
+    });
+  });
+
+  document.addEventListener("click", function (event) {
+    var button = event.target.closest ? event.target.closest("[data-shop-action]") : null;
+    if (!button) return;
+
+    var item = button.getAttribute("data-shop-action") || "This drop";
+    var status = document.querySelector("[data-shop-status]");
+    if (status) {
+      status.textContent = item + " is part of the free maker library preview. Files will appear here when the drop is ready.";
+    }
+    document.querySelectorAll("[data-shop-action]").forEach(function (control) {
+      control.classList.toggle("is-selected", control === button);
     });
   });
 

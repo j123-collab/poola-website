@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poola Shop - Free maker library</title>
+<meta name="description" content="Explore Poola's free maker library: printable designs, 3D files, clothing graphics, signs, badges and campaign kits for supporters to make at home.">
+<meta property="og:title" content="Poola Shop - Everything here is free">
+<meta property="og:description" content="Downloadable designs for people who want to make Poola visible in the real world.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css?v=stripe-refactor-11">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="index.html" aria-label="Poola home"><img src="assets/logo-mark.svg" alt=""> Poola</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="shop.html" class="is-active">Shop</a>
+      <a href="about.html">About</a>
+      <a class="btn btn--primary nav__cta" href="index.html#downloads" data-magnetic>Download</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero shop-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> Poola Shop</p>
+        <h1>Everything here is free.</h1>
+        <p class="hero__sub">Downloadable designs for people who want to make Poola visible in the real world. The work is done by the crowd: printing, making, wearing, sharing and showing up.</p>
+        <div class="shop-hero__facts" aria-label="Shop principles">
+          <span><strong>0</strong><em>payment flows</em></span>
+          <span><strong>6</strong><em>maker categories</em></span>
+          <span><strong>100%</strong><em>free drops</em></span>
+        </div>
+      </div>
+      <div class="shop-visual" data-reveal="right" aria-label="Free maker library preview">
+        <div class="maker-object maker-object--cube"><span></span><span></span><span></span></div>
+        <div class="maker-object maker-object--poster">
+          <strong>POOLA</strong>
+          <span>People Power Kit</span>
+        </div>
+        <div class="maker-object maker-object--tag"><i class="fa-solid fa-shirt"></i></div>
+        <div class="maker-object maker-object--badge">FREE</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section shop-intro">
+    <div class="container shop-intro__grid">
+      <div data-reveal>
+        <p class="eyebrow">Not a store</p>
+        <h2>A library of things people can make.</h2>
+      </div>
+      <div class="copy-stack" data-reveal>
+        <p>Poola Shop is where campaign identity becomes real-world participation: signs on a table, a badge on a jacket, a 3D printed stand, a poster in a window, a shirt made locally.</p>
+        <p>No payment flow or product-buying language. Each drop is a free file set designed to help supporters carry a Pool into their neighbourhood, event, studio or workspace.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--color shop-catalog-section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Launch catalog</p>
+      <h2>Free files for visible momentum.</h2>
+      <p class="lead">Preview the first maker drops planned for Poola. Downloads will appear here when the files are ready.</p>
+    </div>
+    <div class="container shop-grid" data-reveal-group>
+      <article class="shop-card shop-card--featured" data-reveal data-tilt>
+        <div class="shop-preview shop-preview--stand" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="shop-card__body">
+          <div class="shop-card__meta"><span>3D print file</span><b>Prototype</b></div>
+          <h3>Pool display stand</h3>
+          <p>A small tabletop stand for QR cards, campaign signs and event booths.</p>
+          <dl>
+            <div><dt>Formats</dt><dd>STL, 3MF, STEP</dd></div>
+            <div><dt>Difficulty</dt><dd>Medium</dd></div>
+          </dl>
+          <button class="btn btn--primary" type="button" data-shop-action="Pool display stand">Preview file</button>
+        </div>
+      </article>
+
+      <article class="shop-card" data-reveal>
+        <div class="shop-preview shop-preview--poster" aria-hidden="true"><span>POOL STARTED</span></div>
+        <div class="shop-card__body">
+          <div class="shop-card__meta"><span>Poster design</span><b>Preview</b></div>
+          <h3>Window poster kit</h3>
+          <p>Printable campaign posters for cafes, studios, libraries and noticeboards.</p>
+          <dl>
+            <div><dt>Formats</dt><dd>PDF, SVG, PNG</dd></div>
+            <div><dt>Difficulty</dt><dd>Easy</dd></div>
+          </dl>
+          <button class="btn btn--ghost" type="button" data-shop-action="Window poster kit">Preview file</button>
+        </div>
+      </article>
+
+      <article class="shop-card" data-reveal>
+        <div class="shop-preview shop-preview--shirt" aria-hidden="true"><i class="fa-solid fa-shirt"></i><span>People Power</span></div>
+        <div class="shop-card__body">
+          <div class="shop-card__meta"><span>Clothing graphic</span><b>Coming soon</b></div>
+          <h3>People Power tee mark</h3>
+          <p>Simple artwork for screen printing, transfers and small local merch runs.</p>
+          <dl>
+            <div><dt>Formats</dt><dd>SVG, EPS, PNG</dd></div>
+            <div><dt>Difficulty</dt><dd>Easy</dd></div>
+          </dl>
+          <button class="btn btn--ghost" type="button" data-shop-action="People Power tee mark">Request this drop</button>
+        </div>
+      </article>
+
+      <article class="shop-card" data-reveal>
+        <div class="shop-preview shop-preview--stickers" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="shop-card__body">
+          <div class="shop-card__meta"><span>Sticker sheet</span><b>Preview</b></div>
+          <h3>Support signal stickers</h3>
+          <p>Small labels for laptops, packages, community boards and maker tables.</p>
+          <dl>
+            <div><dt>Formats</dt><dd>PDF, SVG</dd></div>
+            <div><dt>Difficulty</dt><dd>Easy</dd></div>
+          </dl>
+          <button class="btn btn--ghost" type="button" data-shop-action="Support signal stickers">Preview file</button>
+        </div>
+      </article>
+
+      <article class="shop-card" data-reveal>
+        <div class="shop-preview shop-preview--badge" aria-hidden="true"><span>BACKER</span></div>
+        <div class="shop-card__body">
+          <div class="shop-card__meta"><span>Badge template</span><b>Coming soon</b></div>
+          <h3>Backer badge set</h3>
+          <p>Printable supporter badges for launches, meetups and local campaign days.</p>
+          <dl>
+            <div><dt>Formats</dt><dd>PDF, SVG, PNG</dd></div>
+            <div><dt>Difficulty</dt><dd>Easy</dd></div>
+          </dl>
+          <button class="btn btn--ghost" type="button" data-shop-action="Backer badge set">Request this drop</button>
+        </div>
+      </article>
+
+      <article class="shop-card" data-reveal>
+        <div class="shop-preview shop-preview--kit" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="shop-card__body">
+          <div class="shop-card__meta"><span>Campaign kit</span><b>Prototype</b></div>
+          <h3>Community table kit</h3>
+          <p>A printable field kit for explaining a Pool at schools, markets and events.</p>
+          <dl>
+            <div><dt>Formats</dt><dd>PDF, SVG, ZIP</dd></div>
+            <div><dt>Difficulty</dt><dd>Medium</dd></div>
+          </dl>
+          <button class="btn btn--ghost" type="button" data-shop-action="Community table kit">Coming soon</button>
+        </div>
+      </article>
+    </div>
+    <p class="shop-status container" data-shop-status aria-live="polite"></p>
+  </section>
+
+  <section class="section">
+    <div class="container free-works">
+      <div data-reveal>
+        <p class="eyebrow">How free works</p>
+        <h2>The file is free. The power is local.</h2>
+      </div>
+      <div class="free-steps" data-reveal-group>
+        <article data-reveal><span>01</span><h3>Take a file</h3><p>Choose a design made for printing, making, wearing or displaying.</p></article>
+        <article data-reveal><span>02</span><h3>Make it nearby</h3><p>Use your printer, local makerspace, school, studio or workshop.</p></article>
+        <article data-reveal><span>03</span><h3>Put it to work</h3><p>Bring the object to a Pool launch, table, window, event or community board.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta shop-drop-cta">
+    <div class="container final-cta__inner" data-reveal>
+      <p class="signal"><span></span> Community drops</p>
+      <h2>Have a design people should make?</h2>
+      <p>Future Poola drops will include community-submitted print files, graphics and field kits. For now, this is a preview of the maker library direction.</p>
+      <div class="cta-actions">
+        <button class="btn btn--primary" type="button" data-shop-action="Community drop submission">Request this drop</button>
+        <a class="btn btn--ghost btn--on-dark" href="how-it-works.html">How Poola works</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a class="footer__brand" href="index.html"><img src="assets/logo-mark.svg" alt=""> Poola</a>
+      <p>All crowd-sourcing. One powerful audience.</p>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="index.html#downloads">Download</a>
+    </div>
+    <p class="footer__meta">&copy; <span data-year></span> Poola</p>
+  </div>
+</footer>
+
+<script src="main.js?v=stripe-refactor-11"></script>
+</body>
+</html>
