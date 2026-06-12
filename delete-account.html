@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete your Poola account</title>
+<meta name="description" content="How to delete your Poola account and the data that is removed when you do.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="index.html"><img src="assets/logo-mark.svg" alt=""> Poola</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="about.html">About</a>
+      <a class="btn btn--primary nav__cta" href="index.html#join" data-magnetic>Join the waitlist</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container" style="max-width:720px;">
+    <h1 class="balance" style="font-size:clamp(2rem,4.6vw,3.2rem);margin:40px 0 20px;">Delete your Poola account</h1>
+    <p style="margin-bottom:24px;">You can delete your Poola account and its data at any time, directly in the app:</p>
+    <ol style="line-height:2;margin:0 0 28px 20px;">
+      <li>Open the Poola app and sign in</li>
+      <li>Go to <strong>Settings &rarr; Delete account</strong></li>
+      <li>Confirm — deletion takes effect immediately</li>
+    </ol>
+
+    <h2 class="h2" style="font-size:1.4rem;margin:28px 0 12px;">What gets deleted</h2>
+    <p style="margin-bottom:16px;">Your sign-in account is permanently removed and your profile is anonymized:
+    name, email address, phone number, biography and profile photo are erased. You will no longer be able to
+    sign in, and your personal information is no longer associated with any activity.</p>
+
+    <h2 class="h2" style="font-size:1.4rem;margin:28px 0 12px;">What is kept</h2>
+    <p style="margin-bottom:16px;">Records that other people depend on — pools you created and contributions
+    made to them — remain, attributed to an anonymized account, so that backers' contribution history and the
+    integrity of completed campaigns is preserved. Financial transaction records are retained as required by
+    bookkeeping and anti-money-laundering law (processed by Stripe).</p>
+
+    <h2 class="h2" style="font-size:1.4rem;margin:28px 0 12px;">Can't access the app?</h2>
+    <p style="margin-bottom:40px;">Email <a href="mailto:info@poola.io">info@poola.io</a> from the address on
+    your account and we will process the deletion manually within 30 days.</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__cap balance">Make <span>waves.</span></p>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="brandlock brandlock--footer"><img src="assets/logo-mark.svg" alt=""><span class="wm">Poola</span></div>
+        <p>All crowd-sourcing. One powerful audience. Back the things you love with funds and People Power.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="about.html">About &amp; vision</a>
+        <a href="index.html#join">Join the waitlist</a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <a href="mailto:info@poola.io">info@poola.io</a>
+        <a href="mailto:josephhewings@poola.io">josephhewings@poola.io</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Poola Group AB</span>
+      <span>Made to make waves 🌊</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
