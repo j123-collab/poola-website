@@ -1,10 +1,10 @@
 # Poola — relaunch website
 
-Static, multi-page early-access site for the Poola relaunch.
-*All crowd-sourcing. One powerful audience. — Make waves.*
+Static, multi-page download site for the Poola relaunch.
+*All crowd-sourcing. One powerful audience.*
 
 ## Pages
-- `index.html` — Home + waitlist
+- `index.html` — Home + downloads
 - `how-it-works.html` — Product (Pools, People Power, toolkit)
 - `about.html` — Story, vision & contact
 
@@ -19,22 +19,16 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-## ⚙️ Waitlist form — one step to go live
-The email form is wired in `main.js` (`WAITLIST_ENDPOINT`). Until it's set it
-validates + shows the success state but does **not** store emails.
-
-To collect real signups, create a free [Formspree](https://formspree.io) form and
-replace the placeholder:
-```js
-var WAITLIST_ENDPOINT = "https://formspree.io/f/your-id";
-```
-(Or ask Claude to wire it to the existing Firebase/Firestore project instead.)
+## Downloads
+The homepage includes platform cards for iOS, Android, Windows, macOS and Linux.
+Until real store URLs or app files exist, the buttons show an honest "coming soon"
+state rather than linking to fake downloads. Add real links in `index.html` when
+the builds are ready.
 
 ## Deploy
 GitHub Pages from `main`. Live at `https://j123-collab.github.io/poola-website/`.
 The `poola.io` domain can be pointed here later via a `CNAME` file + DNS.
 
 ## Assets
-Source brand + app imagery comes from `~/Desktop/CV DATA/Poola/`
-(logos, illustration, and the Oct 2025 pitch deck). Originals are untouched;
-working copies live in `assets/`.
+Source brand + app imagery comes from the Poola brand files and product stills.
+Working copies live in `assets/`.

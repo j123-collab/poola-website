@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Poola — All crowd-sourcing. One powerful audience.</title>
-<meta name="description" content="Poola is a transparent crowd-sourcing platform where people back the causes, creators and ideas they love — not just with money, but with skills, resources, time and their voice. Join the waitlist.">
-<meta property="og:title" content="Poola — Make Waves">
+<title>Poola - All crowd-sourcing. One powerful audience.</title>
+<meta name="description" content="Download Poola for iOS, Android, Windows, macOS and Linux. Back causes, creators, projects and communities with funds plus People Power.">
+<meta property="og:title" content="Poola - People Power for every crowd">
 <meta property="og:description" content="All crowd-sourcing. One powerful audience. Back the things you love with funds and People Power.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -13,272 +13,308 @@
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="preload" as="image" href="assets/app/hero-explore.webp">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=stripe-refactor-2">
 </head>
 <body>
 <div class="progress" id="progress"></div>
 
-<!-- NAV -->
 <header class="nav" id="nav">
   <div class="container nav__inner">
-    <a class="nav__brand" href="index.html"><img src="assets/logo-mark.svg" alt=""> Poola</a>
+    <a class="nav__brand" href="index.html" aria-label="Poola home"><img src="assets/logo-mark.svg" alt=""> Poola</a>
     <nav class="nav__links" id="navLinks">
       <a href="index.html" class="is-active">Home</a>
       <a href="how-it-works.html">How it works</a>
       <a href="about.html">About</a>
-      <a class="btn btn--primary nav__cta" href="#join" data-magnetic>Join the waitlist</a>
+      <a class="btn btn--primary nav__cta" href="#downloads" data-magnetic>Download</a>
     </nav>
-    <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><span></span></button>
   </div>
 </header>
 
 <main>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="mesh"><div class="mesh__fade"></div></div>
-  <div class="container hero__grid">
-    <div>
-      <div class="brandlock brandlock--hero"><img src="assets/logo-mark.svg" alt=""><span class="wm">Poola</span></div>
-      <h1 class="balance">All crowd-sourcing. <span class="accent">One powerful audience.</span></h1>
-      <p class="hero__sub">Back the causes, creators and ideas you love — not just with money, but with your skills, resources, time and your voice. Poola is the home for everything crowd-sourcing.</p>
-      <form class="waitform" data-waitlist>
-        <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
-        <button class="btn btn--primary" type="submit" data-magnetic>Get early access</button>
-      </form>
-      <p class="waitnote"><i class="fa-solid fa-water"></i> Be first to make waves. No spam — just one note when we launch.</p>
-      <p class="waitmsg" data-waitmsg aria-live="polite"></p>
-    </div>
-    <div class="hero__stage">
-      <div class="hero__halo"></div>
-      <div class="hero__phone hero__phone--back">
-        <img src="assets/app/pool-page.webp" alt="" width="1000" height="2243">
-      </div>
-      <div class="hero__phone hero__phone--front">
-        <img src="assets/app/hero-explore.webp" alt="The Poola app showing a feed of community Pools to explore" width="1000" height="2901">
-      </div>
-      <div class="hero__chip hero__chip--1"><i class="fa-solid fa-bolt" style="color:var(--orange)"></i> People Power</div>
-      <div class="hero__chip hero__chip--2">
-        <span>Funded</span>
-        <span class="meter"><b style="width:62%;background:var(--teal)"></b></span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<section class="section--tight">
-  <div class="container center">
-    <p class="muted" style="font-family:var(--font-display);font-weight:600;letter-spacing:-.01em;margin-bottom:18px;">Everything they do — in one place.</p>
-  </div>
-  <div class="marquee">
-    <div class="marquee__track">
-      <span class="pill pill--ghost">Kickstarter</span><span class="pill pill--ghost">GoFundMe</span><span class="pill pill--ghost">Patreon</span><span class="pill pill--ghost">Indiegogo</span><span class="pill pill--ghost">Crowdcube</span><span class="pill pill--ghost">Ko-fi</span><span class="pill pill--ghost">change.org</span><span class="pill pill--ghost">Gumroad</span><span class="pill pill--ghost">Buy Me a Coffee</span><span class="pill pill--ghost">Fundly</span><span class="pill pill--ghost">Wefunder</span>
-      <span class="pill pill--ghost">Kickstarter</span><span class="pill pill--ghost">GoFundMe</span><span class="pill pill--ghost">Patreon</span><span class="pill pill--ghost">Indiegogo</span><span class="pill pill--ghost">Crowdcube</span><span class="pill pill--ghost">Ko-fi</span><span class="pill pill--ghost">change.org</span><span class="pill pill--ghost">Gumroad</span><span class="pill pill--ghost">Buy Me a Coffee</span><span class="pill pill--ghost">Fundly</span><span class="pill pill--ghost">Wefunder</span>
-    </div>
-  </div>
-</section>
-
-<!-- PROBLEM -->
-<section class="section">
-  <div class="container">
-    <p class="eyebrow center">The problem</p>
-    <h2 class="center balance" style="max-width:18ch;margin:0 auto 12px;">Crowd-funding lost its trust, its energy and its people.</h2>
-    <p class="lead center" style="margin:0 auto 50px;">A market dominated by legacy platforms that have barely changed since they started.</p>
-    <div class="stats" data-reveal>
-      <div class="stat"><b><span data-count="75" data-suffix="%">0%</span></b><span>of backers never return to another campaign</span></div>
-      <div class="stat"><b><span data-count="95" data-suffix="%">0%</span></b><span>of contributions are purely financial</span></div>
-      <div class="stat"><b><span data-count="2" data-prefix="1–" data-suffix="%">0%</span></b><span>of users are ever actively involved</span></div>
-      <div class="stat"><b><span data-count="20" data-suffix="%">0%</span></b><span>of campaigns actually reach their goal</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- SOLUTION -->
-<section class="section bg-paper">
-  <div class="container">
-    <div class="split">
-      <div data-reveal="left">
-        <p class="eyebrow">Meet Poola</p>
-        <h2 class="h2" style="margin-bottom:18px;">Giving that goes <span style="color:var(--teal)">beyond funding</span>.</h2>
-        <p class="lead" style="margin-bottom:18px;">Every Poola campaign is a <strong>Pool</strong> — and people can dive in however they’re able. Pledge money, yes, but also lend a skill, donate an item, volunteer an hour, sign a petition or simply show up.</p>
-        <p class="muted" style="margin-bottom:26px;">We measure it all as two numbers on every Pool: <strong>Funds</strong> and <strong>People Power</strong> — so impact is finally about more than cash.</p>
-        <div class="chips" data-reveal-group>
-          <span class="pill" data-reveal><i class="fa-solid fa-coins"></i> Fund</span>
-          <span class="pill" data-reveal><i class="fa-solid fa-screwdriver-wrench"></i> Offer skills</span>
-          <span class="pill" data-reveal><i class="fa-solid fa-box-open"></i> Offer resources</span>
-          <span class="pill" data-reveal><i class="fa-solid fa-hand-holding-heart"></i> Volunteer</span>
-          <span class="pill" data-reveal><i class="fa-solid fa-feather-pointed"></i> Sign</span>
-          <span class="pill" data-reveal><i class="fa-solid fa-people-group"></i> Take part</span>
+  <section class="hero hero--home">
+    <div class="stripe-field" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container hero__layout">
+      <div class="hero__copy" data-reveal>
+        <h1>All crowd-sourcing. One powerful audience.</h1>
+        <p class="hero__sub">Poola helps people back the causes, creators, neighbourhoods and ideas they care about with money, skills, resources, time and voice.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#downloads" data-magnetic>Download Poola</a>
+          <a class="btn btn--ghost" href="how-it-works.html">See how it works</a>
+        </div>
+        <div class="hero-proof" aria-label="Poola product signals">
+          <span><strong>5</strong><em>platforms planned</em></span>
+          <span><strong>6</strong><em>ways to contribute</em></span>
+          <span><strong>2</strong><em>progress signals</em></span>
         </div>
       </div>
-      <div class="split__media is-bare media-glow" data-reveal="right">
-        <img src="assets/app/people-power.webp" alt="Poola screens showing ways to contribute: skills, resources, volunteering and signing" loading="lazy" width="1800" height="1733">
+
+      <aside class="hero-stack" data-tilt data-reveal="right" aria-label="Poola product preview">
+        <div class="hero-card hero-card--command">
+          <div class="command-dots"><span></span><span></span><span></span></div>
+          <code>poola.create({ contribution: "people_power" })</code>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-top">
+            <span>Live Pool</span>
+            <strong>Community kitchen relaunch</strong>
+          </div>
+          <div class="hero-panel__grid">
+            <div><span>Funds</span><strong>62%</strong></div>
+            <div><span>Power</span><strong>91%</strong></div>
+            <div><span>Backers</span><strong>428</strong></div>
+          </div>
+          <div class="impact-meter">
+            <span>Money raised</span>
+            <b><i style="width:62%"></i></b>
+          </div>
+          <div class="impact-meter impact-meter--aqua">
+            <span>Skills, time, resources and voices</span>
+            <b><i style="width:91%"></i></b>
+          </div>
+          <div class="mini-feed">
+            <div><i class="fa-solid fa-screwdriver-wrench"></i><span>12 people offered skills</span></div>
+            <div><i class="fa-solid fa-box-open"></i><span>8 resources pledged</span></div>
+            <div><i class="fa-solid fa-bullhorn"></i><span>240 signatures added</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="company-marquee section--tight" aria-label="Crowd-sourcing platforms Poola brings together">
+    <div class="container center">
+      <p>All these worlds, combined into one place.</p>
+    </div>
+    <div class="company-marquee__mask">
+      <div class="company-marquee__track" aria-hidden="true">
+        <span>Kickstarter</span><span>GoFundMe</span><span>Patreon</span><span>Indiegogo</span><span>Crowdcube</span><span>Ko-fi</span><span>Change.org</span><span>Gumroad</span><span>Buy Me a Coffee</span><span>Fundly</span><span>Wefunder</span>
+        <span>Kickstarter</span><span>GoFundMe</span><span>Patreon</span><span>Indiegogo</span><span>Crowdcube</span><span>Ko-fi</span><span>Change.org</span><span>Gumroad</span><span>Buy Me a Coffee</span><span>Fundly</span><span>Wefunder</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- BENTO -->
-<section class="section">
-  <div class="container">
-    <p class="eyebrow center">Why Poola</p>
-    <h2 class="center balance" style="max-width:20ch;margin:0 auto 50px;">Built for impact, designed to delight.</h2>
-    <div class="bento" data-reveal-group>
-      <div class="card tile tile--feature tile--teal" data-reveal>
-        <div>
-          <span class="pill" style="background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.3);color:#fff;">Dual contribution</span>
-          <h3 style="color:#fff;margin:16px 0 8px;font-size:1.6rem;">Funds <span style="opacity:.7">+</span> People Power</h3>
-          <p>One Pool, two ways to grow. A campaign that’s 17% funded and 83% powered by people is finally a success you can see.</p>
+  <section class="proof-band section--tight">
+    <div class="container proof-band__inner" data-reveal-group>
+      <p data-reveal>One home for every kind of crowd action</p>
+      <div class="proof-list" data-reveal>
+        <span>Funding</span>
+        <span>Skills</span>
+        <span>Resources</span>
+        <span>Volunteering</span>
+        <span>Petitions</span>
+        <span>Events</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section narrative">
+    <div class="container narrative__grid">
+      <div data-reveal>
+        <p class="eyebrow">Why it matters</p>
+        <h2>Backing something should feel bigger than checking out.</h2>
+      </div>
+      <div class="copy-stack" data-reveal>
+        <p>Traditional crowd-funding made support feel narrow: donate, share, wait. But most people have more to give than money, and most projects need more than a payment rail.</p>
+        <p>Poola turns every campaign into a living Pool, where financial backing and People Power grow side by side.</p>
+      </div>
+    </div>
+    <div class="container insight-row" data-reveal-group>
+      <article class="insight" data-reveal>
+        <span>01</span>
+        <h3>Contribution is broader than cash</h3>
+        <p>Support can be a skill, a room, a signature, a spare hour, a network, or a voice.</p>
+      </article>
+      <article class="insight" data-reveal>
+        <span>02</span>
+        <h3>Momentum needs to stay visible</h3>
+        <p>Every Pool shows what is funded, what is powered, and what still needs help.</p>
+      </article>
+      <article class="insight" data-reveal>
+        <span>03</span>
+        <h3>Trust comes from participation</h3>
+        <p>Updates, progress signals and community actions make support easier to believe in.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--color">
+    <div class="container product-engine">
+      <div class="engine-copy" data-reveal>
+        <p class="eyebrow">The Poola engine</p>
+        <h2>Funds plus People Power, measured together.</h2>
+        <p class="lead">A Pool can grow through money, work, things, attendance, signatures and amplification. Tap each contribution type to see how Poola makes it legible.</p>
+        <div class="engine-tabs" role="tablist" aria-label="Contribution types">
+          <button class="engine-tab is-active" type="button" data-engine="funds"><i class="fa-solid fa-coins"></i> Funds</button>
+          <button class="engine-tab" type="button" data-engine="skills"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</button>
+          <button class="engine-tab" type="button" data-engine="time"><i class="fa-solid fa-clock"></i> Time</button>
+          <button class="engine-tab" type="button" data-engine="voice"><i class="fa-solid fa-bullhorn"></i> Voice</button>
         </div>
-        <div class="tilestats">
-          <div><b>86</b><span>contributors</span></div>
-          <div><b>€2,780</b><span>raised</span></div>
-          <div><b>17h</b><span>left</span></div>
+      </div>
+      <div class="engine-card" data-reveal="right">
+        <div class="engine-card__head">
+          <span data-engine-label>Funds</span>
+          <strong data-engine-score>62%</strong>
         </div>
+        <p data-engine-copy>Direct pledges give a Pool its financial base, with transparent progress and simple fees.</p>
         <div class="meterbar">
-          <div class="row"><span style="width:96px">Funds</span><span class="track"><b data-w="38" style="background:#fff"></b></span></div>
-          <div class="row"><span style="width:96px">People Power</span><span class="track"><b data-w="83" style="background:var(--yellow)"></b></span></div>
+          <div class="row"><span data-engine-meter-label>Funding progress</span><span class="track"><b data-w="62"></b></span></div>
+          <div class="row"><span>People Power</span><span class="track"><b data-w="82"></b></span></div>
         </div>
-      </div>
-      <div class="card tile" data-reveal>
-        <div class="big"><span data-count="2.9" data-dec="1" data-suffix="%">0%</span></div>
-        <p>One flat fee + 6 SEK per transaction. No surprises, ever.</p>
-      </div>
-      <div class="card tile tile--dark" data-reveal>
-        <div class="big" style="color:#fff"><span data-count="315" data-prefix="€" data-suffix="B">€0B</span></div>
-        <p>A converging market, growing to €959B by 2030.</p>
-      </div>
-      <div class="card tile" data-reveal>
-        <i class="fa-solid fa-location-dot" style="font-size:1.4rem;color:var(--teal)"></i>
-        <div>
-          <h3>Local &amp; global</h3>
-          <p>Find Pools on a live map, or a feed tuned to you.</p>
-        </div>
-      </div>
-      <div class="card tile" data-reveal>
-        <i class="fa-solid fa-shield-heart" style="font-size:1.4rem;color:var(--green)"></i>
-        <div>
-          <h3>Trust, built in</h3>
-          <p>Transparent progress, updates and stories on every Pool.</p>
+        <div class="engine-visual engine-visual--color" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- THREE MARKETS -->
-<section class="section bg-ink">
-  <div class="container">
-    <p class="eyebrow center">One app, three worlds</p>
-    <h2 class="center balance" style="max-width:20ch;margin:0 auto 50px;">Charities, creators and startups — finally under one roof.</h2>
-    <div class="grid grid--3" data-reveal-group>
-      <div class="card tile--dark" data-reveal>
-        <span class="pill" style="background:var(--green);border-color:transparent;color:#fff;"><span class="dot" style="background:#fff"></span> Charities</span>
-        <h3 style="margin:18px 0 8px;color:#fff;">Causes &amp; community</h3>
-        <p class="muted">From disaster relief to the local library — raise funds and rally real hands-on help.</p>
-      </div>
-      <div class="card tile--dark" data-reveal>
-        <span class="pill" style="background:var(--orange);border-color:transparent;color:#fff;"><span class="dot" style="background:#fff"></span> Creators</span>
-        <h3 style="margin:18px 0 8px;color:#fff;">Make &amp; get backed</h3>
-        <p class="muted">Sell tickets, take commissions, run polls and build a crowd that does more than tip.</p>
-      </div>
-      <div class="card tile--dark" data-reveal>
-        <span class="pill" style="background:#000;border-color:rgba(255,255,255,.2);color:#fff;"><span class="dot" style="background:#fff"></span> Startups</span>
-        <h3 style="margin:18px 0 8px;color:#fff;">Launch &amp; grow</h3>
-        <p class="muted">Pre-seed your idea, gather early believers and turn backers into advocates.</p>
-      </div>
+  <section class="section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Product shape</p>
+      <h2>Built like a platform, not a donation button.</h2>
+      <p class="lead">Poola brings discovery, contribution, updates and creator tools into one polished flow.</p>
     </div>
-  </div>
-</section>
-
-<!-- APP PREVIEW -->
-<section class="section">
-  <div class="container">
-    <p class="eyebrow center">A glimpse of the app</p>
-    <h2 class="center balance" style="max-width:18ch;margin:0 auto 14px;">Discover Pools near you and across the world.</h2>
-    <p class="lead center" style="margin:0 auto 44px;">Explore, map, contribute and follow the story — all in one beautifully simple place.</p>
-    <div class="split__media is-bare media-glow" data-reveal="scale" style="max-width:940px;margin-inline:auto;">
-      <img src="assets/app/explore-map.webp" alt="Poola Explore feed and map view of local Pools by category" loading="lazy" width="1800" height="1733">
-    </div>
-    <p class="center" style="margin-top:32px;">
-      <a class="btn" href="how-it-works.html" data-magnetic>See how Poola works <span class="arr"><i class="fa-solid fa-arrow-right"></i></span></a>
-    </p>
-  </div>
-</section>
-
-<!-- WHY NOW / MARKET -->
-<section class="section bg-paper">
-  <div class="container">
-    <div class="split">
-      <div data-reveal="left">
-        <p class="eyebrow">Why now</p>
-        <h2 class="h2" style="margin-bottom:18px;">A <span data-count="315" data-prefix="€" data-suffix="B">€315B</span> market, growing to <span style="color:var(--teal)">€959B by 2030</span>.</h2>
-        <p class="lead" style="margin-bottom:18px;">Charity, creator and startup crowdfunding are converging — but no one has built a single home for all of it. That’s the wave we’re here to catch.</p>
-        <p class="muted">One transparent platform. One flat, honest fee. One powerful audience that follows what they care about across every kind of Pool.</p>
-      </div>
-      <div data-reveal="right" style="display:grid;place-items:center;">
-        <div class="tam">
-          <div class="tam__circle tam__c1"><span><b>€100B</b><small>startups</small></span></div>
-          <div class="tam__circle tam__core"><span><b>€315B</b><small>today → €959B ’30</small></span></div>
-          <div class="tam__circle tam__c2"><span><b>€65B</b><small>charities</small></span></div>
-          <div class="tam__circle tam__c3"><span><b>€150B</b><small>creators</small></span></div>
+    <div class="bento-premium" data-reveal-group>
+      <article class="feature feature--wide" data-reveal>
+        <span class="kicker">01</span>
+        <h3>Unified contribution model</h3>
+        <p>Every Pool can ask for exactly what it needs: capital, expertise, supplies, volunteers, attendance or collective voice.</p>
+      </article>
+      <article class="feature" data-reveal>
+        <span class="kicker">02</span>
+        <h3>Local and global discovery</h3>
+        <p>Find causes around you or follow projects across borders from a feed tuned to participation.</p>
+      </article>
+      <article class="feature feature--dark" data-reveal>
+        <span class="kicker">03</span>
+        <h3>Transparent progress</h3>
+        <p>Two signals tell the full story: what is funded and what is powered by people.</p>
+      </article>
+      <article class="feature" data-reveal>
+        <span class="kicker">04</span>
+        <h3>Creator dashboard</h3>
+        <p>Pool starters can see what is moving, what is stuck and what action to ask for next.</p>
+      </article>
+      <article class="feature feature--color" data-reveal>
+        <div class="color-system" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
         </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section product-proof">
+    <div class="container product-proof__grid">
+      <div data-reveal>
+        <p class="eyebrow">Product evidence</p>
+        <h2>Real app surfaces, cleaned up and correctly framed.</h2>
+        <p class="lead">The stills now support the story instead of carrying the whole website. Each one has a clear role in the product narrative.</p>
+      </div>
+      <div class="product-stills" data-reveal-group>
+        <article class="still" data-reveal>
+          <img src="assets/product/still-explore.webp" alt="Poola Explore screen showing top Pools and recommended Pools" width="428" height="926" loading="lazy">
+          <h3>Explore</h3>
+        </article>
+        <article class="still" data-reveal>
+          <img src="assets/product/still-updates.webp" alt="Poola Updates screen showing saved Pools and campaign updates" width="428" height="926" loading="lazy">
+          <h3>Follow</h3>
+        </article>
+        <article class="still" data-reveal>
+          <img src="assets/product/still-dashboard.webp" alt="Poola Dashboard screen showing progress and campaign analytics" width="428" height="926" loading="lazy">
+          <h3>Manage</h3>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section class="section" id="join">
-  <div class="container">
-    <div class="cta" data-reveal="scale">
-      <h2 class="balance">Make waves with us.</h2>
-      <p>Poola is getting ready to relaunch. Join the waitlist and be among the first to start, back and grow Pools when we open the doors.</p>
-      <form class="waitform" data-waitlist>
-        <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
-        <button class="btn btn--primary" type="submit">Join the waitlist</button>
-      </form>
-      <p class="waitmsg" data-waitmsg aria-live="polite"></p>
-      <p class="waitnote">We’ll only email you about early access.</p>
+  <section class="section audience">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Who it serves</p>
+      <h2>One audience, many kinds of momentum.</h2>
     </div>
-  </div>
-</section>
+    <div class="container audience__grid" data-reveal-group>
+      <article class="audience-card" data-reveal>
+        <span class="dot dot--green"></span>
+        <h3>Communities and causes</h3>
+        <p>Raise money, recruit volunteers, collect supplies and keep supporters close.</p>
+      </article>
+      <article class="audience-card" data-reveal>
+        <span class="dot dot--coral"></span>
+        <h3>Creators and projects</h3>
+        <p>Build a crowd around the work, not just a one-off campaign page.</p>
+      </article>
+      <article class="audience-card" data-reveal>
+        <span class="dot dot--ink"></span>
+        <h3>Startups and teams</h3>
+        <p>Validate, recruit, fund and activate early believers from one place.</p>
+      </article>
+    </div>
+  </section>
 
+  <section class="section download-hub" id="downloads">
+    <div class="container download-hub__head" data-reveal>
+      <p class="signal"><span></span> Download Poola</p>
+      <h2>Choose your platform.</h2>
+      <p>Poola is being packaged for mobile and desktop. Download buttons are marked honestly until store pages and app files are ready.</p>
+    </div>
+    <div class="container download-grid" data-reveal-group>
+      <article class="download-card download-card--featured" data-reveal>
+        <i class="fa-brands fa-apple"></i>
+        <span>iPhone and iPad</span>
+        <h3>Poola for iOS</h3>
+        <p>Designed for discovering, backing and following Pools on the go.</p>
+        <button class="btn btn--primary" type="button" data-download="iOS">Coming soon</button>
+      </article>
+      <article class="download-card" data-reveal>
+        <i class="fa-brands fa-android"></i>
+        <span>Android phones</span>
+        <h3>Poola for Android</h3>
+        <p>The same People Power model for Android supporters and Pool starters.</p>
+        <button class="btn btn--ghost" type="button" data-download="Android">Coming soon</button>
+      </article>
+      <article class="download-card" data-reveal>
+        <i class="fa-brands fa-windows"></i>
+        <span>Desktop</span>
+        <h3>Poola for Windows</h3>
+        <p>Manage Pools, review progress and coordinate community action.</p>
+        <button class="btn btn--ghost" type="button" data-download="Windows">Coming soon</button>
+      </article>
+      <article class="download-card" data-reveal>
+        <i class="fa-brands fa-apple"></i>
+        <span>Desktop</span>
+        <h3>Poola for macOS</h3>
+        <p>A focused desktop workspace for running campaigns with clarity.</p>
+        <button class="btn btn--ghost" type="button" data-download="macOS">Coming soon</button>
+      </article>
+      <article class="download-card" data-reveal>
+        <i class="fa-brands fa-linux"></i>
+        <span>Desktop</span>
+        <h3>Poola for Linux</h3>
+        <p>Built for operators and teams who want Poola on their own machines.</p>
+        <button class="btn btn--ghost" type="button" data-download="Linux">Coming soon</button>
+      </article>
+    </div>
+    <p class="download-status container" data-download-status aria-live="polite"></p>
+  </section>
 </main>
 
-<!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
-    <p class="footer__cap balance">Make <span>waves.</span></p>
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="brandlock brandlock--footer"><img src="assets/logo-mark.svg" alt=""><span class="wm">Poola</span></div>
-        <p>All crowd-sourcing. One powerful audience. Back the things you love with funds and People Power.</p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <a href="index.html">Home</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="about.html">About &amp; vision</a>
-        <a href="#join">Join the waitlist</a>
-      </div>
-      <div>
-        <h4>Get in touch</h4>
-        <a href="mailto:info@poola.io">info@poola.io</a>
-        <a href="mailto:josephhewings@poola.io">josephhewings@poola.io</a>
-      </div>
+  <div class="container footer__inner">
+    <div>
+      <a class="footer__brand" href="index.html"><img src="assets/logo-mark.svg" alt=""> Poola</a>
+      <p>All crowd-sourcing. One powerful audience.</p>
     </div>
-    <div class="footer__bottom">
-      <span>© <span data-year>2026</span> Poola Group AB</span>
-      <span>Made to make waves 🌊</span>
+    <div class="footer__links">
+      <a href="how-it-works.html">How it works</a>
+      <a href="about.html">About</a>
+      <a href="#downloads">Download</a>
     </div>
+    <p class="footer__meta">&copy; <span data-year></span> Poola</p>
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js?v=stripe-refactor-2"></script>
 </body>
 </html>
