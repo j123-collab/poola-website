@@ -1,0 +1,19 @@
+{
+  "name": "poola",
+  "version": "1.0.0",
+  "description": "Static, multi-page download site for the Poola relaunch. *All crowd-sourcing. One powerful audience.*",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0 --port 8080",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0 --port 8080",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "astro": "^7.0.0",
+    "wrangler": "^4.103.0"
+  }
+}

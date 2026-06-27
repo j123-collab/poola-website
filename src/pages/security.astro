@@ -1,0 +1,172 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola Security";
+const description = "Security principles and responsible disclosure contact for Poola.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero security-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container security-hero__inner">
+      <div class="security-hero__copy" data-reveal>
+        <p class="signal"><span></span> Security</p>
+        <h1>Security operating system.</h1>
+        <p class="hero__sub">Poola needs finance-grade payment care and crowdfunding-grade community protection. Security is designed around accounts, money movement, Pool integrity, reports and proof.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#security-help" data-magnetic>Get help now</a>
+          <a class="btn btn--ghost" href="mailto:info@poola.io?subject=Security%20report">Report a vulnerability</a>
+        </div>
+      </div>
+
+      <div class="security-command-center" data-reveal aria-label="Security operating model preview">
+        <div class="security-command-center__top">
+          <span>Launch security model</span>
+          <strong>Every Pool needs money trust plus people trust.</strong>
+        </div>
+        <div class="security-signal-board">
+          <div>
+            <span class="status-dot status-dot--done"></span>
+            <strong>Provider-handled payments</strong>
+            <em>Use trusted payment rails for contribution flows.</em>
+          </div>
+          <div>
+            <span class="status-dot status-dot--new"></span>
+            <strong>Account protection</strong>
+            <em>Protect sessions, roles and sensitive account actions.</em>
+          </div>
+          <div>
+            <span class="status-dot status-dot--review"></span>
+            <strong>Pool review</strong>
+            <em>Flag suspicious behavior before momentum scales.</em>
+          </div>
+          <div>
+            <span class="status-dot status-dot--scheduled"></span>
+            <strong>Proof trail</strong>
+            <em>Keep updates, reports and outcomes readable.</em>
+          </div>
+        </div>
+        <div class="security-command-flow" aria-hidden="true">
+          <span>Identity</span>
+          <span>Payments</span>
+          <span>Reports</span>
+          <span>Proof</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="security-proof-band" aria-label="Security proof points">
+    <div class="container security-proof-band__inner" data-reveal-group>
+      <article data-reveal><i class="fa-solid fa-credit-card" aria-hidden="true"></i><strong>Payment care</strong><span>Contribution flows should rely on trusted providers and auditable records.</span></article>
+      <article data-reveal><i class="fa-solid fa-user-shield" aria-hidden="true"></i><strong>Account safety</strong><span>Access to sensitive systems stays limited, logged and reviewed.</span></article>
+      <article data-reveal><i class="fa-solid fa-flag" aria-hidden="true"></i><strong>Visible reports</strong><span>Poolers need clear paths for suspicious Pools, abuse and payment concerns.</span></article>
+      <article data-reveal><i class="fa-solid fa-bug" aria-hidden="true"></i><strong>Disclosure path</strong><span>Security reports go to info@poola.io with enough detail to investigate.</span></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Protection areas</p>
+      <h2>What Poola protects before a Pool earns trust.</h2>
+      <p class="lead">Security is not one badge. It is the everyday system behind who can act, where money moves, what gets reviewed and how people report trouble.</p>
+    </div>
+    <div class="container security-protect-grid" data-reveal-group>
+      <article data-reveal><i class="fa-solid fa-key" aria-hidden="true"></i><span>Accounts</span><h3>Protect sign-in and roles.</h3><p>Sessions, permissions and sensitive account changes should be guarded so Pool Starters, Poolers and reviewers only get the access they need.</p></article>
+      <article data-reveal><i class="fa-solid fa-building-columns" aria-hidden="true"></i><span>Payments</span><h3>Keep money movement auditable.</h3><p>Payment-provider records, payout states, refunds and disputed contributions should stay visible enough for support and trust review.</p></article>
+      <article data-reveal><i class="fa-solid fa-list-check" aria-hidden="true"></i><span>Pool integrity</span><h3>Review the campaign, not just the user.</h3><p>Poola should watch for misleading claims, risky asks, suspicious updates and missing proof before people are encouraged to pile in.</p></article>
+      <article data-reveal><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i><span>Reporting</span><h3>Make concern paths obvious.</h3><p>Unsafe behavior, abuse, payment issues and vulnerability reports need simple routes with enough context to act responsibly.</p></article>
+      <article data-reveal><i class="fa-solid fa-server" aria-hidden="true"></i><span>Infrastructure</span><h3>Reduce operational exposure.</h3><p>Sensitive systems should use limited access, monitored changes and recoverable records instead of informal back-office handling.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--tight" id="security-help">
+    <div class="container security-help-panel" data-reveal>
+      <div>
+        <p class="eyebrow">Need help now?</p>
+        <h2>Start with the kind of concern.</h2>
+        <p>Security pages in finance products work because the next action is obvious. Poola should do the same for community trust, payment questions and responsible disclosure.</p>
+      </div>
+      <div class="security-action-grid">
+        <a href="mailto:info@poola.io?subject=Suspicious%20Pool"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><strong>Suspicious Pool</strong><span>Report misleading claims, unsafe asks or missing proof.</span></a>
+        <a href="mailto:info@poola.io?subject=Payment%20concern"><i class="fa-solid fa-receipt" aria-hidden="true"></i><strong>Payment concern</strong><span>Ask about refunds, disputes, provider states or payout timing.</span></a>
+        <a href="mailto:info@poola.io?subject=Account%20security"><i class="fa-solid fa-lock" aria-hidden="true"></i><strong>Account issue</strong><span>Flag sign-in trouble, unauthorized access or profile concerns.</span></a>
+        <a href="mailto:info@poola.io?subject=Security%20report"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><strong>Vulnerability report</strong><span>Send technical details without accessing data that is not yours.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--color security-review-section">
+    <div class="container security-review-grid">
+      <div data-reveal>
+        <p class="eyebrow">Crowdfunding trust</p>
+        <h2>Fundraiser review has to be human-readable.</h2>
+        <p class="lead">The strongest crowdfunding trust pages explain how people, reports and platform signals work together. Poola should make that chain visible without pretending every Pool is guaranteed safe.</p>
+      </div>
+      <div class="security-review-timeline" data-reveal-group>
+        <article data-reveal><span>01</span><h3>Pool basics</h3><p>Who is starting it, what they need, how support will be used and what proof should exist later.</p></article>
+        <article data-reveal><span>02</span><h3>Technical signals</h3><p>Repeated behavior, unusual activity, payment-state mismatches and reports can move a Pool into review.</p></article>
+        <article data-reveal><span>03</span><h3>Human judgement</h3><p>Review should consider context, urgency, local needs and whether the ask is safe for Poolers to join.</p></article>
+        <article data-reveal><span>04</span><h3>Status and proof</h3><p>If risk changes, the visible status should change too: pending, under review, fulfilled, refunded or closed with proof.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Security layers</p>
+      <h2>A simple model people can scan.</h2>
+      <p class="lead">Each layer answers a different trust question before money, time, skills or attention move through a Pool.</p>
+    </div>
+    <div class="container security-model-demo" data-security-demo data-reveal>
+      <div class="status-picker" role="tablist" aria-label="Security layers">
+        <button class="status-button is-active" type="button" data-security-key="accounts">Accounts</button>
+        <button class="status-button" type="button" data-security-key="payments">Payments</button>
+        <button class="status-button" type="button" data-security-key="integrity">Pool integrity</button>
+        <button class="status-button" type="button" data-security-key="infrastructure">Infrastructure</button>
+      </div>
+      <article class="status-panel security-layer-panel">
+        <span data-security-label>Accounts</span>
+        <h3 data-security-title>Access should be narrow, intentional and recoverable.</h3>
+        <p data-security-copy>Poola should protect account sessions, role changes and sensitive actions with clear ownership and support paths.</p>
+        <strong data-security-action>Best next step: keep profile, account and support records easy to verify.</strong>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container security-disclosure-grid">
+      <aside class="policy-toc" data-reveal>
+        <h2>Trust links</h2>
+        <a href="trust-status.html">Trust status</a>
+        <a href="safety.html">Safety center</a>
+        <a href="community-guidelines.html">Community guidelines</a>
+        <a class="is-active" href="security.html">Security</a>
+        <a href="accessibility.html">Accessibility</a>
+      </aside>
+      <article class="trust-note-card security-disclosure-card" data-reveal>
+        <p class="eyebrow">Careful wording</p>
+        <h2>Security claims should be specific, not inflated.</h2>
+        <p>Poola should avoid unsupported certification, guarantee or fraud-prevention claims. The stronger message is clear security principles, trusted payment handling, visible report routes, auditable support records and honest status changes when something needs review.</p>
+        <h3>Responsible disclosure</h3>
+        <p>If you believe you found a vulnerability, email <a href="mailto:info@poola.io?subject=Security%20report">info@poola.io</a> with the subject "Security report". Please avoid accessing, changing or sharing data that is not yours.</p>
+        <div class="policy-meta">
+          <span>Security contact: info@poola.io</span>
+          <span>No unsupported certification claims</span>
+          <span>Last updated June 13, 2026</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container final-cta__inner" data-reveal>
+      <p class="signal"><span></span> Trust layer</p>
+      <h2>Security works best when trust work is visible.</h2>
+      <p>Pair security principles with status labels, safety guidance and community rules so Poolers know what is protected and what still needs judgement.</p>
+      <div class="cta-actions">
+        <a class="btn btn--primary" href="trust-status.html" data-magnetic>View trust status</a>
+        <a class="btn btn--ghost btn--on-dark" href="safety.html">Safety center</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

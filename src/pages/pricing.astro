@@ -1,0 +1,311 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola Pricing - 2.9% + 6 SEK";
+const description = "Poola pricing and cost examples. Minimum monetary contributions start at 5 in the selected currency. See what reaches a Pool after the current 2.9% + 6 SEK fee.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero feature-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> Pricing</p>
+        <h1>Follow the money.</h1>
+        <p class="hero__sub">Poola keeps the money path simple: minimum monetary contributions start at 5 in the selected currency, with the fee and estimated Pool amount shown before checkout.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#calculator" data-magnetic>Try calculator</a>
+          <a class="btn btn--ghost" href="#examples">See examples</a>
+        </div>
+      </div>
+      <div class="pricing-card" data-reveal="right">
+        <span>Current working fee</span>
+        <strong>2.9% + 6 SEK</strong>
+        <p>Per monetary contribution. The minimum contribution is 5 in the selected currency, with no platform fee on skills, time, resources, signatures or other People Power commitments.</p>
+        <div class="cta-actions">
+          <a class="btn btn--ghost btn--on-dark" href="#examples">Donation examples</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing-section" id="examples">
+    <div class="container pricing-grid">
+      <div data-reveal>
+        <p class="eyebrow">Cost examples</p>
+        <h2>What reaches the Pool.</h2>
+        <p class="lead">These examples start at the minimum 5 SEK contribution and show the estimated net amount if the Poola fee is deducted from each donation. Final provider handling can depend on the live payment setup.</p>
+      </div>
+      <div class="pricing-card" data-reveal="right">
+        <span>Examples after fee</span>
+        <strong>2.9% + 6 SEK</strong>
+        <div class="pricing-breakdown" aria-label="Example amounts received after the Poola fee">
+          <h3>Donation breakdown</h3>
+          <p class="pricing-breakdown__intro">5 SEK is the lowest SEK contribution. These rows show illustrative net received if the fee is deducted from each donation, including the effective percentage that reaches the Pool.</p>
+          <div class="pricing-table-wrap">
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th scope="col">Donation</th>
+                  <th scope="col">Fee</th>
+                  <th scope="col">Pool receives</th>
+                  <th scope="col">Pool gets</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5 SEK</td>
+                  <td>6.15 SEK</td>
+                  <td class="pricing-table__warning">Fee exceeds gift</td>
+                  <td class="pricing-table__warning">0%</td>
+                </tr>
+                <tr>
+                  <td>10 SEK</td>
+                  <td>6.29 SEK</td>
+                  <td>3.71 SEK</td>
+                  <td>37.1%</td>
+                </tr>
+                <tr>
+                  <td>20 SEK</td>
+                  <td>6.58 SEK</td>
+                  <td>13.42 SEK</td>
+                  <td>67.1%</td>
+                </tr>
+                <tr>
+                  <td>50 SEK</td>
+                  <td>7.45 SEK</td>
+                  <td>42.55 SEK</td>
+                  <td>85.1%</td>
+                </tr>
+                <tr>
+                  <td>100 SEK</td>
+                  <td>8.90 SEK</td>
+                  <td>91.10 SEK</td>
+                  <td>91.1%</td>
+                </tr>
+                <tr>
+                  <td>500 SEK</td>
+                  <td>20.50 SEK</td>
+                  <td>479.50 SEK</td>
+                  <td>95.9%</td>
+                </tr>
+                <tr>
+                  <td>1,000 SEK</td>
+                  <td>35.00 SEK</td>
+                  <td>965.00 SEK</td>
+                  <td>96.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="pricing-note">5 SEK is allowed, but tiny donations work better when Poolers cover the fee or combine support into a larger gift.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section currency-section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Usual amounts</p>
+      <h2>Common gifts in GBP, USD and EUR.</h2>
+      <p class="lead">The minimum contribution is 5 in the selected currency: 5 SEK, £5, $5 or €5. These launch-market examples use the same percentage plus a small fixed local fee, with fixed local fees as placeholders until payment provider setup is final.</p>
+    </div>
+    <div class="container currency-example-grid" data-reveal-group>
+      <article class="currency-card" data-reveal>
+        <span>GBP example</span>
+        <h3>2.9% + £0.50</h3>
+        <div class="currency-amount-list">
+          <div><span>£5</span><strong>£4.35</strong><em>87.0% reaches Pool - after £0.65 fee</em></div>
+          <div><span>£10</span><strong>£9.21</strong><em>92.1% reaches Pool - after £0.79 fee</em></div>
+          <div><span>£20</span><strong>£18.92</strong><em>94.6% reaches Pool - after £1.08 fee</em></div>
+          <div><span>£50</span><strong>£48.05</strong><em>96.1% reaches Pool - after £1.95 fee</em></div>
+          <div><span>£100</span><strong>£96.60</strong><em>96.6% reaches Pool - after £3.40 fee</em></div>
+          <div><span>£1,000</span><strong>£970.50</strong><em>97.1% reaches Pool - after £29.50 fee</em></div>
+        </div>
+      </article>
+      <article class="currency-card" data-reveal>
+        <span>USD example</span>
+        <h3>2.9% + $0.60</h3>
+        <div class="currency-amount-list">
+          <div><span>$5</span><strong>$4.25</strong><em>85.0% reaches Pool - after $0.75 fee</em></div>
+          <div><span>$10</span><strong>$9.11</strong><em>91.1% reaches Pool - after $0.89 fee</em></div>
+          <div><span>$20</span><strong>$18.82</strong><em>94.1% reaches Pool - after $1.18 fee</em></div>
+          <div><span>$50</span><strong>$47.95</strong><em>95.9% reaches Pool - after $2.05 fee</em></div>
+          <div><span>$100</span><strong>$96.50</strong><em>96.5% reaches Pool - after $3.50 fee</em></div>
+          <div><span>$1,000</span><strong>$970.40</strong><em>97.0% reaches Pool - after $29.60 fee</em></div>
+        </div>
+      </article>
+      <article class="currency-card" data-reveal>
+        <span>EUR example</span>
+        <h3>2.9% + €0.55</h3>
+        <div class="currency-amount-list">
+          <div><span>€5</span><strong>€4.30</strong><em>86.0% reaches Pool - after €0.70 fee</em></div>
+          <div><span>€10</span><strong>€9.16</strong><em>91.6% reaches Pool - after €0.84 fee</em></div>
+          <div><span>€20</span><strong>€18.87</strong><em>94.4% reaches Pool - after €1.13 fee</em></div>
+          <div><span>€50</span><strong>€48.00</strong><em>96.0% reaches Pool - after €2.00 fee</em></div>
+          <div><span>€100</span><strong>€96.55</strong><em>96.6% reaches Pool - after €3.45 fee</em></div>
+          <div><span>€1,000</span><strong>€970.45</strong><em>97.0% reaches Pool - after €29.55 fee</em></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--color fee-section" id="calculator">
+    <div class="container fee-grid">
+      <div data-reveal>
+        <p class="eyebrow">Fee calculator</p>
+        <h2>Make the net amount visible in each currency.</h2>
+        <p class="lead">Use this as a public-facing demo of the pricing model. The slider starts at 5 in each currency. SEK uses the current copy; GBP, USD and EUR use illustrative fixed local fees.</p>
+      </div>
+      <div class="fee-calculator" data-fee-calculator data-reveal="right">
+        <div class="fee-controls">
+          <div class="fee-field">
+            <label for="pricingCurrency">Currency</label>
+            <select id="pricingCurrency" data-fee-currency>
+              <option value="SEK">SEK</option>
+              <option value="GBP">GBP</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+          <div class="fee-field fee-field--amount">
+            <label for="pricingContributionAmount" data-fee-currency-label>Contribution amount in SEK</label>
+            <input id="pricingContributionAmount" type="range" min="5" max="5000" step="5" value="100" data-fee-amount>
+          </div>
+        </div>
+        <div class="fee-readout"><strong data-fee-gross>100 SEK</strong><span>Example contribution</span></div>
+        <div class="fee-lines">
+          <div><span>Poola fee</span><strong data-fee-total>8.90 SEK</strong></div>
+          <div><span>Estimated to Pool</span><strong data-fee-net>91.10 SEK</strong></div>
+          <div><span>Pool gets</span><strong data-fee-percent>91.1%</strong></div>
+          <div><span>Formula</span><strong data-fee-formula>2.9% + 6 SEK</strong></div>
+          <div><span>Minimum</span><strong data-fee-minimum>5 SEK</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing-comparison-section" id="comparison">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Competitive context</p>
+      <h2>Most platforms price the transaction. Poola prices money and frees action.</h2>
+      <p class="lead">Some competitors are excellent money tools. Poola's difference is the wider contribution surface: funds carry the fee, while skills, time, resources, signatures, attendance and updates stay outside payment pricing.</p>
+    </div>
+    <div class="container pricing-comparison-grid" data-reveal-group>
+      <article class="pricing-compare-card pricing-compare-card--poola" data-reveal>
+        <div class="pricing-compare-card__top">
+          <i class="fa-solid fa-water"></i>
+          <span>Poola</span>
+        </div>
+        <h3>2.9% + 6 SEK</h3>
+        <p>One current working fee on monetary contributions, with no platform fee on non-money People Power commitments.</p>
+        <div class="pricing-compare-tags">
+          <span>Money</span>
+          <span>Skills</span>
+          <span>Volunteers</span>
+          <span>Resources</span>
+        </div>
+      </article>
+
+      <article class="pricing-compare-card" data-reveal>
+        <div class="pricing-compare-card__top">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <span>Personal fundraising</span>
+        </div>
+        <h3>GoFundMe</h3>
+        <strong class="pricing-compare-fee">2.9% + $0.30</strong>
+        <p>GoFundMe lists no fee to start or manage a fundraiser and a transaction fee deducted from each donation. Donor tips are optional.</p>
+        <a href="https://www.gofundme.com/c/pricing" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="pricing-compare-card" data-reveal>
+        <div class="pricing-compare-card__top">
+          <i class="fa-solid fa-rocket"></i>
+          <span>Product launches</span>
+        </div>
+        <h3>Kickstarter</h3>
+        <strong class="pricing-compare-fee">5% + 3%-5%</strong>
+        <p>Kickstarter says successful projects pay a 5% platform fee plus payment processing fees, generally between 3% and 5%.</p>
+        <a href="https://www.kickstarter.com/help/fees" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="pricing-compare-card" data-reveal>
+        <div class="pricing-compare-card__top">
+          <i class="fa-solid fa-bullhorn"></i>
+          <span>Campaign funding</span>
+        </div>
+        <h3>Indiegogo</h3>
+        <strong class="pricing-compare-fee">5% + 3%</strong>
+        <p>Indiegogo lists a 5% platform fee and 3% payment processing on successfully collected payments.</p>
+        <a href="https://www.indiegogo.com/en/info/fees" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="pricing-compare-card" data-reveal>
+        <div class="pricing-compare-card__top">
+          <i class="fa-solid fa-repeat"></i>
+          <span>Membership</span>
+        </div>
+        <h3>Patreon</h3>
+        <strong class="pricing-compare-fee">10% + processing</strong>
+        <p>Patreon currently presents a 10% platform price for new creators, plus payment processing, currency conversion, payout fees and taxes where applicable.</p>
+        <a href="https://www.patreon.com/pricing" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="pricing-compare-card" data-reveal>
+        <div class="pricing-compare-card__top">
+          <i class="fa-solid fa-building-columns"></i>
+          <span>Donation software</span>
+        </div>
+        <h3>Donorbox</h3>
+        <strong class="pricing-compare-fee">2.95% platform + processing</strong>
+        <p>Donorbox says credit card donations on its Standard plan start with a 2.95% platform fee, with Stripe or PayPal processing separate.</p>
+        <a href="https://donorbox.org/pricing" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="pricing-compare-card" data-reveal>
+        <div class="pricing-compare-card__top">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span>Creator support</span>
+        </div>
+        <h3>Ko-fi / Buy Me a Coffee</h3>
+        <strong class="pricing-compare-fee">0%-5% / 5%</strong>
+        <p>Ko-fi markets 0%-5% platform fees depending on feature type. Buy Me a Coffee says creators keep 95% and it charges a 5% transaction fee.</p>
+        <div class="pricing-compare-links">
+          <a href="https://ko-fi.com/pricing" target="_blank" rel="noopener">Ko-fi</a>
+          <a href="https://help.buymeacoffee.com/en/articles/4539170-frequently-asked-questions" target="_blank" rel="noopener">Buy Me a Coffee</a>
+        </div>
+      </article>
+    </div>
+    <div class="container pricing-comparison-note" data-reveal>
+      <p>The fair comparison is not only fee versus fee. A pure money-only fundraiser may have different economics by country, currency and payment provider. Poola's edge is that a Pool can collect money, skills, volunteering, resources, petitions and updates in one place without turning every act of help into a paid transaction.</p>
+      <p>Prices last checked June 15, 2026. Published pricing can vary by country, tax, payment method, currency conversion, payout method, campaign type, optional tips and subscription tier.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">What this means</p>
+      <h2>Clear money, free People Power.</h2>
+      <p class="lead">The dedicated pricing page should make the cost answer easy without making Poola sound like only a payment platform.</p>
+    </div>
+    <div class="container competitive-grid" data-reveal-group>
+      <article data-reveal><i class="fa-solid fa-coins"></i><span>Money</span><h3>Funds use the fee.</h3><p>Monetary contributions use the current <strong>2.9% + 6 SEK</strong> fee so the cost is predictable.</p></article>
+      <article data-reveal><i class="fa-solid fa-hand-holding-heart"></i><span>People Power</span><h3>Non-money help stays separate.</h3><p>Skills, time, resources, signatures, attendance and voice are contribution types, not payment transactions.</p></article>
+      <article data-reveal><i class="fa-solid fa-receipt"></i><span>Checkout</span><h3>Show the net before giving.</h3><p>Poolers and Pool Starters should see fee, gross amount and estimated Pool amount before checkout.</p></article>
+      <article data-reveal><i class="fa-solid fa-scale-balanced"></i><span>Small gifts</span><h3>5 is the floor.</h3><p>The minimum monetary contribution is 5 in the selected currency, but fixed fees make very small gifts more efficient when the fee is covered or donations are combined.</p></article>
+      <article data-reveal><i class="fa-solid fa-user-plus"></i><span>Optional</span><h3>Poolers can cover the fee.</h3><p>A planned checkout option can let supporters add the fee on top so the Pool receives more of the intended gift.</p></article>
+      <article data-reveal><i class="fa-solid fa-circle-check"></i><span>No surprise</span><h3>No hidden subscription.</h3><p>Keep the pricing promise plain: no hidden subscription and no platform taking credit for People Power.</p></article>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container final-cta__inner" data-reveal>
+      <p class="signal"><span></span> Next step</p>
+      <h2>Cost is one part of the bigger Poola story.</h2>
+      <p>Pricing explains the money path. The product pages explain how funds, skills, volunteers and proof work together.</p>
+      <div class="cta-actions">
+        <a class="btn btn--primary" href="index.html#how-it-works" data-magnetic>How it works</a>
+        <a class="btn btn--ghost btn--on-dark" href="pool-starters.html">Pool Starter tools</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

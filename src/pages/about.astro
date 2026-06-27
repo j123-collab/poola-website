@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "About Poola";
+const description = "About Poola now lives on the homepage.";
+const robots = "noindex";
+const canonical = "index.html#about";
+---
+
+<BaseLayout title={title} description={description} robots={robots} canonical={canonical}>
+  <section class="page-hero policy-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> About</p>
+        <h1>About now lives on Home.</h1>
+        <p class="hero__sub">Poola's story, product direction and company context have moved into the homepage so the top navigation stays focused.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container policy-layout">
+      <aside class="policy-toc" data-reveal>
+        <h2>Company links</h2>
+        <a class="is-active" href="index.html#about">About</a>
+        <a href="contributors.html">Contributors</a>
+        <a href="investors.html">Investors</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
+        <a href="press.html">Press</a>
+        <a href="careers.html">Careers</a>
+      </aside>
+      <div class="policy-content" data-reveal>
+        <article class="policy-card">
+          <h2>Continue to About Poola</h2>
+          <p>The About section is part of the homepage now, alongside the product story and platform direction.</p>
+          <p><a class="btn btn--primary" href="index.html#about">Go to About on Home</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

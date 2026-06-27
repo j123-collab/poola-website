@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola Privacy Policy";
+const description = "How Poola handles account, profile, Pool, contribution, payment and support data.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero policy-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> Privacy</p>
+        <h1>Privacy policy.</h1>
+        <p class="hero__sub">What Poola may collect, why it is needed and the choices people should have.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container policy-layout">
+      <aside class="policy-toc" data-reveal>
+        <h2>Legal links</h2>
+        <a href="terms.html">Terms and conditions</a>
+        <a class="is-active" href="privacy.html">Privacy policy</a>
+        <a href="cookies.html">Cookie policy</a>
+        <a href="refund-policy.html">Funding and refunds</a>
+        <a href="delete-account.html">Delete account</a>
+      </aside>
+      <div class="policy-content" data-reveal>
+        <article class="policy-card">
+          <h2>Privacy at Poola</h2>
+          <p>Poola needs some information to run accounts, Pools, contributions, safety systems and support. The goal is to collect what is useful, explain why it is used and avoid unnecessary exposure.</p>
+          <h3>Information Poola may handle</h3>
+          <ul>
+            <li>Account and profile details such as name, email, profile photo and biography.</li>
+            <li>Pool content, updates, comments, reports and People Power commitments.</li>
+            <li>Payment and payout records handled with payment providers.</li>
+            <li>Device, log and usage information used for security, reliability and product improvement.</li>
+            <li>Messages sent to support, press, security or partnership contacts.</li>
+          </ul>
+          <h3>How information is used</h3>
+          <p>Information may be used to operate Poola, show campaign progress, process contributions, prevent abuse, verify profiles, respond to requests, improve the product and meet legal obligations.</p>
+          <h3>Choices</h3>
+          <p>Users should be able to update account details, request support and delete their account where available. Some records may be retained when needed for legal, accounting, safety or campaign integrity reasons.</p>
+          <div class="policy-meta"><span>Last updated June 13, 2026</span><span>Privacy contact: info@poola.io</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

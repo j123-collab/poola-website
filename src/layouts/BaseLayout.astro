@@ -1,0 +1,75 @@
+---
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/styles.css";
+import mainScriptUrl from "../scripts/main.js?url";
+
+const {
+  title = "Poola",
+  description = "Money plus action for every crowd.",
+  robots,
+  canonical,
+  htmlClass
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class={htmlClass}>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>{title}</title>
+    {description && <meta name="description" content={description}>}
+    {robots && <meta name="robots" content={robots}>}
+    {canonical && <link rel="canonical" href={canonical}>}
+    <meta property="og:title" content={title}>
+    {description && <meta property="og:description" content={description}>}
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <script is:inline>
+      (() => {
+        const hasNativePageTransitions = "startViewTransition" in document && "PageSwapEvent" in window && "PageRevealEvent" in window;
+        document.documentElement.classList.toggle("has-native-page-transitions", hasNativePageTransitions);
+        document.documentElement.classList.toggle("no-native-page-transitions", !hasNativePageTransitions);
+
+        const settleViewTransition = (event) => {
+          const transition = event && event.viewTransition;
+          if (!transition) return;
+          transition.ready && transition.ready.catch(() => {});
+          transition.finished && transition.finished.catch(() => {});
+          transition.updateCallbackDone && transition.updateCallbackDone.catch(() => {});
+        };
+
+        window.addEventListener("pageswap", settleViewTransition);
+        window.addEventListener("pagereveal", settleViewTransition);
+        window.addEventListener("unhandledrejection", (event) => {
+          const reason = event.reason;
+          if (reason && reason.name === "InvalidStateError" && /Transition was aborted/.test(reason.message || "")) {
+            event.preventDefault();
+          }
+        });
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="progress" id="progress"></div>
+    <Nav />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <button class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-back-to-top>
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <script is:inline src={mainScriptUrl}></script>
+  </body>
+</html>

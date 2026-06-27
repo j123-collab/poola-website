@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola Terms and Conditions";
+const description = "Terms and conditions for using Poola, starting Pools and contributing funds or People Power.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero policy-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> Legal</p>
+        <h1>Terms and conditions.</h1>
+        <p class="hero__sub">The basic rules for using Poola, starting Pools and contributing funds or People Power.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container policy-layout">
+      <aside class="policy-toc" data-reveal>
+        <h2>Legal links</h2>
+        <a class="is-active" href="terms.html">Terms and conditions</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="cookies.html">Cookie policy</a>
+        <a href="refund-policy.html">Funding and refunds</a>
+        <a href="delete-account.html">Delete account</a>
+      </aside>
+      <div class="policy-content" data-reveal>
+        <article class="policy-card">
+          <h2>Using Poola</h2>
+          <p>Poola is built to help people discover, start and support Pools through money and People Power: skills, time, resources, signatures, attendance and voice.</p>
+          <h3>Your responsibilities</h3>
+          <ul>
+            <li>Use accurate information when creating an account, starting a Pool or making a contribution.</li>
+            <li>Do not use Poola for fraud, harassment, illegal activity, misleading campaigns or unsafe requests.</li>
+            <li>Respect the rights, privacy and safety of Pool Starters, Poolers and people mentioned in a Pool.</li>
+          </ul>
+          <h3>Starting a Pool</h3>
+          <p>Pool Starters are responsible for the accuracy of their Pool page, updates, contribution requests, fulfilment, permissions and any local rules that apply to their campaign.</p>
+          <h3>Contributions and fees</h3>
+          <p>People Power contributions are intended to be free to offer. Monetary contributions may use the stated Poola fee of <strong>2.9% + 6 SEK</strong> per transaction.</p>
+          <h3>Moderation</h3>
+          <p>Poola may review, limit, remove or pause content, accounts or Pools when needed to protect users, comply with rules or keep the platform trustworthy.</p>
+          <div class="policy-meta"><span>Last updated June 13, 2026</span><span>Poola Group AB</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

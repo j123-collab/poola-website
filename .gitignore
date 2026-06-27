@@ -1,6 +1,9 @@
 .DS_Store
-assets/_render/
-assets/_venv/
-assets/_*.py
-assets/_sheet.png
+.astro/
+.wrangler/
+dist/
+public/assets/_render/
+public/assets/_venv/
+public/assets/_*.py
+public/assets/_sheet.png
 node_modules/

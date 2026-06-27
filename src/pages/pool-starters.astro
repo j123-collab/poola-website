@@ -1,0 +1,107 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola for Pool Starters - Run every commitment";
+const description = "Poola tools for Pool Starters: CRM, commitment ledger, update composer, volunteer schedule, fee calculator, late contributions and recurring support.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero starter-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> For Pool Starters</p>
+        <h1>Start the Pool. Then run the movement.</h1>
+        <p class="hero__sub">Poola should give Pool Starters more than a publish button: a working cockpit for commitments, supporters, updates, schedules, fees and recurring momentum.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#fee-calculator" data-magnetic>Try fee clarity</a>
+          <a class="btn btn--ghost" href="features.html">All features</a>
+        </div>
+      </div>
+      <div class="starter-cockpit" data-reveal="right" aria-label="Pool Starter cockpit preview">
+        <div><span>New commitments</span><strong>28</strong></div>
+        <div><span>Need follow-up</span><strong>11</strong></div>
+        <div><span>Scheduled hours</span><strong>118</strong></div>
+        <div><span>Next update</span><strong>Ask for drivers</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Starter toolkit</p>
+      <h2>Every major operating tool, in one Pool.</h2>
+      <p class="lead">These are the features that turn a campaign from a page into a managed project.</p>
+    </div>
+    <div class="container starter-tool-grid" data-reveal-group>
+      <article data-reveal><i class="fa-solid fa-address-book"></i><span>Launch candidate</span><h3>Pool Starter CRM</h3><p>Sort Poolers by contribution type, status, location, trust signal and next action.</p></article>
+      <article data-reveal><i class="fa-solid fa-clipboard-check"></i><span>Launch candidate</span><h3>Commitment ledger</h3><p>Track promised funds, skills, resources, signatures, attendance and volunteer hours.</p></article>
+      <article data-reveal><i class="fa-solid fa-pen-to-square"></i><span>Prototype</span><h3>Update composer</h3><p>Write progress updates that automatically include the next action supporters can take.</p></article>
+      <article data-reveal><i class="fa-solid fa-calendar-days"></i><span>Launch candidate</span><h3>Volunteer schedule</h3><p>Turn time offers into roles, shifts, confirmations and completion proof.</p></article>
+      <article data-reveal><i class="fa-solid fa-clock-rotate-left"></i><span>Planned</span><h3>Late contributions</h3><p>Keep useful Pools open for ongoing help after the main target or deadline is reached.</p></article>
+      <article data-reveal><i class="fa-solid fa-arrows-rotate"></i><span>Planned</span><h3>Recurring support</h3><p>Let ongoing causes and creators keep a base of repeat Poolers without restarting trust.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--color">
+    <div class="container starter-workbench">
+      <div data-reveal>
+        <p class="eyebrow">Operating loop</p>
+        <h2>A simple daily workflow for Pool Starters.</h2>
+        <p class="lead">The goal is to make the next useful action obvious, whether the Pool needs money, people, resources, signatures or proof.</p>
+      </div>
+      <div class="workbench-board" data-reveal-group>
+        <article data-reveal><span>01</span><h3>Review new Poolers</h3><p>See who joined, what they offered and which commitments need approval.</p></article>
+        <article data-reveal><span>02</span><h3>Assign or schedule</h3><p>Move skills and volunteer offers into roles, dates and owners.</p></article>
+        <article data-reveal><span>03</span><h3>Post the next ask</h3><p>Publish an update tied to the current gap: funds, drivers, signatures or supplies.</p></article>
+        <article data-reveal><span>04</span><h3>Close with proof</h3><p>Mark commitments completed and attach updates so Poolers see what happened.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fee-section" id="fee-calculator">
+    <div class="container fee-grid">
+      <div data-reveal>
+        <p class="eyebrow">Fee clarity</p>
+        <h2>Make the money path legible before checkout.</h2>
+        <p class="lead">Poola pricing stays consistent for now: <strong>2.9% + 6 SEK</strong> per monetary transaction. This calculator is a website demo, not a live payment quote.</p>
+      </div>
+      <div class="fee-calculator" data-fee-calculator data-reveal="right">
+        <label for="contributionAmount">Contribution amount in SEK</label>
+        <input id="contributionAmount" type="range" min="20" max="5000" step="10" value="500" data-fee-amount>
+        <div class="fee-readout"><strong data-fee-gross>500 SEK</strong><span>Example contribution</span></div>
+        <div class="fee-lines">
+          <div><span>Poola fee</span><strong data-fee-total>20.50 SEK</strong></div>
+          <div><span>Estimated to Pool</span><strong data-fee-net>479.50 SEK</strong></div>
+          <div><span>Formula</span><strong>2.9% + 6 SEK</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container starter-proof-grid">
+      <div data-reveal>
+        <p class="eyebrow">CRM preview</p>
+        <h2>Poolers should never disappear into the feed.</h2>
+      </div>
+      <div class="crm-preview" data-reveal>
+        <div class="crm-row"><span class="status-dot status-dot--new"></span><strong>Amira</strong><em>Design help</em><b>Needs reply</b></div>
+        <div class="crm-row"><span class="status-dot status-dot--scheduled"></span><strong>Jonas</strong><em>Saturday shift</em><b>Scheduled</b></div>
+        <div class="crm-row"><span class="status-dot status-dot--done"></span><strong>Maja</strong><em>500 SEK</em><b>Completed</b></div>
+        <div class="crm-row"><span class="status-dot status-dot--review"></span><strong>Local cafe</strong><em>Venue offer</em><b>Review</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container final-cta__inner" data-reveal>
+      <p class="signal"><span></span> Starter story</p>
+      <h2>Poola should be the place Pool Starters run the whole thing.</h2>
+      <p>Use the full feature map for the wider platform story, or move into partner use cases next.</p>
+      <div class="cta-actions">
+        <a class="btn btn--primary" href="features.html" data-magnetic>All features</a>
+        <a class="btn btn--ghost btn--on-dark" href="partners.html">Partner programs</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola Security - Trust is gone in crowd-sourcing";
+const description = "Poola makes trust work visible in crowd-sourcing with status labels, verification signals, reporting paths and proof updates.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero trust-status-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> Security</p>
+        <h1>Trust is GONE in crowd-sourcing</h1>
+        <p class="hero__sub">Poola makes trust work visible by showing what has been verified, what is pending, what needs an update and what has been completed with proof.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#status-demo" data-magnetic>View status demo</a>
+          <a class="btn btn--ghost" href="safety.html">Safety center</a>
+        </div>
+      </div>
+      <div class="status-snapshot" data-reveal="right" aria-label="Pool status preview">
+        <div><span class="status-dot status-dot--done"></span><strong>Verified profile</strong></div>
+        <div><span class="status-dot status-dot--new"></span><strong>Funds pending</strong></div>
+        <div><span class="status-dot status-dot--review"></span><strong>Under review</strong></div>
+        <div><span class="status-dot status-dot--scheduled"></span><strong>Fulfilled with proof</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="status-demo">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Status demo</p>
+      <h2>A small language for progress and risk.</h2>
+      <p class="lead">These labels are product direction, not legal guarantees. They make status visible so Poolers know what to ask next.</p>
+    </div>
+    <div class="container status-demo" data-status-demo data-reveal>
+      <div class="status-picker" role="tablist" aria-label="Pool trust statuses">
+        <button class="status-button is-active" type="button" data-status-key="verified">Verified</button>
+        <button class="status-button" type="button" data-status-key="funds">Funds pending</button>
+        <button class="status-button" type="button" data-status-key="overdue">Updates overdue</button>
+        <button class="status-button" type="button" data-status-key="review">Under review</button>
+        <button class="status-button" type="button" data-status-key="fulfilled">Fulfilled</button>
+        <button class="status-button" type="button" data-status-key="refunded">Refunded</button>
+        <button class="status-button" type="button" data-status-key="closed">Closed with proof</button>
+      </div>
+      <article class="status-panel">
+        <span data-status-label>Verified</span>
+        <h3 data-status-title>Profile and Pool basics checked.</h3>
+        <p data-status-copy>Poola has signals that the Pool Starter identity and key Pool details have passed the planned verification path.</p>
+        <strong data-status-action>Good for normal contribution with usual caution.</strong>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--color">
+    <div class="container status-grid-wrap">
+      <div data-reveal>
+        <p class="eyebrow">Trust cards</p>
+        <h2>The states Poolers should be able to understand quickly.</h2>
+      </div>
+      <div class="status-card-grid" data-reveal-group>
+        <article data-reveal><span class="status-dot status-dot--done"></span><h3>Verified</h3><p>Core identity or Pool checks have passed the planned review path.</p></article>
+        <article data-reveal><span class="status-dot status-dot--new"></span><h3>Funds pending</h3><p>Money has been contributed but payout, provider handling or confirmation is still in progress.</p></article>
+        <article data-reveal><span class="status-dot status-dot--review"></span><h3>Updates overdue</h3><p>The Pool needs a progress update because time has passed or a milestone was missed.</p></article>
+        <article data-reveal><span class="status-dot status-dot--review"></span><h3>Under review</h3><p>A report, policy issue or trust concern is being checked before more action is encouraged.</p></article>
+        <article data-reveal><span class="status-dot status-dot--scheduled"></span><h3>Fulfilled</h3><p>The Pool Starter has marked the core outcome complete and posted supporting context.</p></article>
+        <article data-reveal><span class="status-dot status-dot--done"></span><h3>Closed with proof</h3><p>The Pool has ended with a final update, outcome summary and contribution trail.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container trust-note-card" data-reveal>
+      <p class="eyebrow">Important wording</p>
+      <h2>Status language should inform, not overpromise.</h2>
+      <p>Poola should avoid guarantee claims. The stronger trust story is clear labelling, visible reporting paths, transparent updates, payment-provider documentation and honest status changes when something is delayed, disputed or completed.</p>
+      <div class="policy-meta">
+        <span>No legal guarantee claims</span>
+        <span>Report paths stay visible</span>
+        <span>Updates remain part of trust</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container final-cta__inner" data-reveal>
+      <p class="signal"><span></span> Trust layer</p>
+      <h2>Trust status makes the product more adult in the room.</h2>
+      <p>Use it with the wider feature map and Safety Center so the promise stays clear and careful.</p>
+      <div class="cta-actions">
+        <a class="btn btn--primary" href="features.html" data-magnetic>All features</a>
+        <a class="btn btn--ghost btn--on-dark" href="safety.html">Safety center</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

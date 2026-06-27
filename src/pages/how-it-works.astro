@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "How Poola Works - AI-native crowd-sourcing";
+const description = "Poola now explains how it works on the homepage: describe the need, build the Pool, gather contributions and verify progress.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero page-hero--color">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> How it works</p>
+        <h1>How Poola works now lives on Home.</h1>
+        <p class="hero__sub">The main Poola story is now one continuous path: intent, AI, contribution, trust, pricing and opening the product.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="index.html#how-it-works" data-magnetic>See how it works</a>
+          <a class="btn btn--ghost" href="index.html#ai">View AI layer</a>
+        </div>
+      </div>
+      <div class="page-hero__visual page-hero__visual--cards" data-reveal="right" aria-label="Poola workflow preview">
+        <div class="system-card system-card--dark">
+          <span>01</span>
+          <strong>Describe the need</strong>
+        </div>
+        <div class="system-card">
+          <span>02</span>
+          <strong>Poola builds the Pool</strong>
+        </div>
+        <div class="system-card system-card--accent">
+          <span>03</span>
+          <strong>Progress is verified</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Compatibility page</p>
+      <h2>One homepage, clearer packaging.</h2>
+      <p class="lead">This page stays available for old links, but the full explanation has moved into the homepage so users and investors can follow Poola without hopping between pages.</p>
+    </div>
+    <div class="container after-flow" data-reveal-group>
+      <article data-reveal><span>Home</span><i class="fa-solid fa-route"></i><h3>How it works</h3><p>See the four-stage flow from plain-language intent to verified progress.</p></article>
+      <article data-reveal><span>AI</span><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Pool Intelligence</h3><p>Understand how AI helps draft Pools, suggest People Power and organise trust work.</p></article>
+      <article data-reveal><span>Trust</span><i class="fa-solid fa-shield-heart"></i><h3>Status language</h3><p>Review the trust states that make risk, proof and progress easier to read.</p></article>
+    </div>
+  </section>
+</BaseLayout>

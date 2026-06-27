@@ -1,0 +1,582 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola - AI-native crowd-sourcing";
+const description = "Poola turns a conversation into a trusted Pool people can fund, join, verify, and move forward with funds and People Power.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="hero hero--home">
+    <div class="container hero__layout">
+      <div class="hero__copy" data-reveal>
+        <h1>Crowd-sourcing should start with intent.</h1>
+        <p class="hero__sub">Poola turns a conversation into a trusted Pool people can fund, join, verify, and move forward.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#downloads" data-magnetic>Open Poola</a>
+          <a class="btn btn--ghost" href="#how-it-works">See how it works</a>
+        </div>
+        <div class="hero-proof" aria-label="Poola product signals">
+          <span><strong>AI</strong><em>intent to Pool</em></span>
+          <span><strong>6</strong><em>ways to contribute</em></span>
+          <span><strong>Trust</strong><em>visible states</em></span>
+        </div>
+      </div>
+
+      <aside class="market-orbit" data-reveal="right" aria-label="Poola market positioning diagram">
+        <div class="market-orbit__stage">
+          <span class="market-orbit__halo" aria-hidden="true"></span>
+          <span class="market-orbit__connector market-orbit__connector--startups" aria-hidden="true"></span>
+          <span class="market-orbit__connector market-orbit__connector--social" aria-hidden="true"></span>
+          <span class="market-orbit__connector market-orbit__connector--creator" aria-hidden="true"></span>
+          <div class="market-orbit__bubble market-orbit__bubble--startups">
+            <strong>Start up</strong>
+          </div>
+          <div class="market-orbit__bubble market-orbit__bubble--social">
+            <strong>Social good</strong>
+          </div>
+          <div class="market-orbit__bubble market-orbit__bubble--creator">
+            <strong>Creator</strong>
+          </div>
+          <div class="market-orbit__core">
+            <strong>Poola</strong>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="company-marquee section--tight" aria-label="Crowd-sourcing platforms Poola brings together">
+    <div class="container center">
+      <p>All these worlds, combined into one place.</p>
+    </div>
+    <div class="company-marquee__mask">
+      <div class="company-marquee__track" aria-hidden="true">
+        <span>Kickstarter</span><span>GoFundMe</span><span>Patreon</span><span>Indiegogo</span><span>Crowdcube</span><span>Ko-fi</span><span>Change.org</span><span>Gumroad</span><span>Buy Me a Coffee</span><span>Fundly</span><span>Wefunder</span>
+        <span>Kickstarter</span><span>GoFundMe</span><span>Patreon</span><span>Indiegogo</span><span>Crowdcube</span><span>Ko-fi</span><span>Change.org</span><span>Gumroad</span><span>Buy Me a Coffee</span><span>Fundly</span><span>Wefunder</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof-band section--tight">
+    <div class="container proof-band__inner" data-reveal-group>
+      <p data-reveal>From conversation to coordinated action</p>
+      <div class="proof-list" data-reveal>
+        <span>Intent</span>
+        <span>AI draft</span>
+        <span>Funds</span>
+        <span>People Power</span>
+        <span>Trust states</span>
+        <span>Updates</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section live-pool-preview">
+    <div class="container live-pool-preview__grid">
+      <div class="live-pool-preview__copy" data-reveal>
+        <p class="eyebrow">Live Pool preview</p>
+        <h2>The campaign surface still does the practical work.</h2>
+        <p class="lead">The diagram explains where Poola sits. The live Pool surface shows what happens next: funds, People Power, updates and proof moving together.</p>
+      </div>
+      <aside class="hero-stack hero-stack--embedded" data-pool-rotator data-tilt data-reveal="right" aria-label="Poola product preview">
+        <div class="hero-card hero-card--command">
+          <div class="command-dots"><span></span><span></span><span></span></div>
+          <code data-pool-command>poola.start("repair the community kitchen")</code>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-top">
+            <span>Live Pool</span>
+            <strong data-pool-title>Community kitchen relaunch</strong>
+          </div>
+          <div class="hero-panel__grid">
+            <div><span>Funds</span><strong data-pool-funds>62%</strong></div>
+            <div><span>Power</span><strong data-pool-power>91%</strong></div>
+            <div><span>Backers</span><strong data-pool-backers>428</strong></div>
+          </div>
+          <div class="impact-meter">
+            <span>Money raised</span>
+            <b><i data-pool-funds-bar style="width:62%"></i></b>
+          </div>
+          <div class="impact-meter impact-meter--aqua">
+            <span>Skills, time, resources and voices</span>
+            <b><i data-pool-power-bar style="width:91%"></i></b>
+          </div>
+          <div class="mini-feed">
+            <div><i data-pool-feed-icon="0" class="fa-solid fa-screwdriver-wrench"></i><span data-pool-feed="0">12 people offered skills</span></div>
+            <div><i data-pool-feed-icon="1" class="fa-solid fa-box-open"></i><span data-pool-feed="1">8 resources pledged</span></div>
+            <div><i data-pool-feed-icon="2" class="fa-solid fa-bullhorn"></i><span data-pool-feed="2">240 signatures added</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section after-contribution" id="how-it-works">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">How it works</p>
+      <h2>Four stages. One continuous Pool.</h2>
+      <p class="lead">Poola starts with what someone wants to make happen, then turns that intent into a campaign people can understand, support and verify.</p>
+    </div>
+    <div class="container after-flow after-flow--four" data-reveal-group>
+      <article data-reveal><span>01</span><i class="fa-solid fa-comment-dots"></i><h3>Describe the need</h3><p>A Pool can begin as a plain-language prompt: what happened, what is needed, who it helps and what proof exists.</p></article>
+      <article data-reveal><span>02</span><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Poola builds the Pool</h3><p>AI drafts the story, goals, contribution asks, risks, updates and trust checklist for human review.</p></article>
+      <article data-reveal><span>03</span><i class="fa-solid fa-people-arrows"></i><h3>People contribute</h3><p>Supporters can fund, volunteer, offer skills, share resources, sign, attend or amplify from one clear surface.</p></article>
+      <article data-reveal><span>04</span><i class="fa-solid fa-shield-heart"></i><h3>Progress is verified</h3><p>Updates, status labels, evidence and reporting paths make momentum visible without pretending risk disappears.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--color">
+    <div class="container product-engine">
+      <div class="engine-copy" data-reveal>
+        <p class="eyebrow">The Poola engine</p>
+        <h2>Funds plus People Power, measured together.</h2>
+        <p class="lead">A Pool can grow through money, work, things, attendance, signatures and amplification. Tap each contribution type to see how Poola makes it legible.</p>
+        <div class="engine-tabs" role="tablist" aria-label="Contribution types">
+          <button class="engine-tab is-active" type="button" data-engine="funds"><i class="fa-solid fa-coins"></i> Funds</button>
+          <button class="engine-tab" type="button" data-engine="skills"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</button>
+          <button class="engine-tab" type="button" data-engine="time"><i class="fa-solid fa-clock"></i> Time</button>
+          <button class="engine-tab" type="button" data-engine="voice"><i class="fa-solid fa-bullhorn"></i> Voice</button>
+        </div>
+      </div>
+      <div class="engine-card" data-reveal="right">
+        <div class="engine-card__head">
+          <span data-engine-label>Funds</span>
+          <strong data-engine-score>62%</strong>
+        </div>
+        <p data-engine-copy>Direct pledges give a Pool its financial base, with transparent progress and simple fees.</p>
+        <div class="meterbar">
+          <div class="row"><span data-engine-meter-label>Funding progress</span><span class="track"><b data-w="62"></b></span></div>
+          <div class="row"><span>People Power</span><span class="track"><b data-w="82"></b></span></div>
+        </div>
+        <div class="engine-visual engine-visual--color" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-poola-wins">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Why Poola wins</p>
+      <h2>Product ideas that make the network harder to copy.</h2>
+      <p class="lead">Poola is not only a better campaign page. It is a set of crowd-sourcing mechanics designed to create trust, repeat use and real-world action.</p>
+    </div>
+    <div class="container moat-grid" data-reveal-group>
+      <article class="moat-card moat-card--dark" data-reveal>
+        <i class="fa-solid fa-layer-group"></i>
+        <span>OpenPools</span>
+        <h3>Support a whole cause, not just one campaign.</h3>
+        <p>Contributors can back a category like disaster relief, education or climate, with funds distributed across qualifying Pools inside that category.</p>
+      </article>
+      <article class="moat-card" data-reveal>
+        <i class="fa-solid fa-truck-medical"></i>
+        <span>First Responder Pools</span>
+        <h3>Move fast when a crisis needs attention.</h3>
+        <p>Urgent Pools can be surfaced quickly for disasters, local emergencies or humanitarian moments where supporters want a trusted path to help.</p>
+      </article>
+      <article class="moat-card" data-reveal>
+        <i class="fa-solid fa-handshake-angle"></i>
+        <span>Contribution Matching</span>
+        <h3>Turn campaign budgets into matched momentum.</h3>
+        <p>Organisations can allocate part of their outreach budget to match contributions inside Poola, making each supporter feel their action goes further.</p>
+      </article>
+      <article class="moat-card moat-card--accent" data-reveal>
+        <i class="fa-solid fa-newspaper"></i>
+        <span>News Widgets</span>
+        <h3>Make news immediately actionable.</h3>
+        <p>Embeddable Poola widgets can let readers contribute from relevant stories, turning awareness into funding, signatures, skills or volunteers.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section competitive-expansion">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">What competitors miss</p>
+      <h2>The real moat starts after someone says yes.</h2>
+      <p class="lead">Poola can become the operating system around a campaign: commitments, follow-up, updates, scheduling, status and partner distribution in one place.</p>
+    </div>
+    <div class="container competitive-grid competitive-grid--home" data-reveal-group>
+      <article data-reveal><i class="fa-solid fa-clipboard-check"></i><span>Commitment management</span><h3>Track every promise.</h3><p>Funds, skills, resources, volunteer time and signatures can move from promised to accepted, scheduled, completed or released.</p></article>
+      <article data-reveal><i class="fa-solid fa-address-book"></i><span>Pool Starter CRM</span><h3>Know who to ask next.</h3><p>Pool Starters can segment Poolers by action type, status, location and follow-up need.</p></article>
+      <article data-reveal><i class="fa-solid fa-bullhorn"></i><span>Action updates</span><h3>Every update drives a next step.</h3><p>Progress posts can end with the right CTA: fund, volunteer, sign, attend, bring or share.</p></article>
+      <article data-reveal><i class="fa-solid fa-calendar-check"></i><span>Volunteer scheduling</span><h3>Turn goodwill into shifts.</h3><p>People Power becomes roles, dates, confirmations and proof rather than scattered DMs.</p></article>
+      <article data-reveal><i class="fa-solid fa-bullseye"></i><span>Decision-maker targets</span><h3>Make civic voice concrete.</h3><p>Petitions and public campaigns can show who needs to hear the community signal.</p></article>
+      <article data-reveal><i class="fa-solid fa-arrows-rotate"></i><span>Recurring support</span><h3>Let trust repeat.</h3><p>Ongoing causes, creators and local efforts can keep a base of recurring Poolers.</p></article>
+      <article data-reveal><i class="fa-solid fa-calculator"></i><span>Fee clarity</span><h3>Show the cost before checkout.</h3><p>Money flows can keep the current <strong>2.9% + 6 SEK</strong> fee clear and predictable.</p></article>
+      <article data-reveal><i class="fa-solid fa-clock-rotate-left"></i><span>Late contributions</span><h3>Keep useful Pools open.</h3><p>Support can continue after a deadline when the work, need or community is still active.</p></article>
+      <article data-reveal><i class="fa-solid fa-code"></i><span>Widgets and embeds</span><h3>Make stories actionable.</h3><p>Partners and publishers can turn relevant news into funding, volunteers, signatures or resources.</p></article>
+      <article data-reveal><i class="fa-solid fa-shield-heart"></i><span>Trust statuses</span><h3>Name the current state.</h3><p>Verified, pending, overdue, under-review and fulfilled labels make risk and progress easier to read.</p></article>
+    </div>
+    <div class="container feature-link-strip" data-reveal>
+      <p>Explore the full product direction across feature pages.</p>
+      <div>
+        <a class="btn btn--primary" href="features.html" data-magnetic>View all features</a>
+        <a class="btn btn--ghost" href="pool-starters.html">For Pool Starters</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Product shape</p>
+      <h2>Built like a platform, not a donation button.</h2>
+      <p class="lead">Poola brings discovery, contribution, updates and creator tools into one polished flow.</p>
+    </div>
+    <div class="bento-premium" data-reveal-group>
+      <article class="feature feature--wide" data-reveal>
+        <span class="kicker">01</span>
+        <h3>Unified contribution model</h3>
+        <p>Every Pool can ask for exactly what it needs: capital, expertise, supplies, volunteers, attendance or collective voice.</p>
+      </article>
+      <article class="feature" data-reveal>
+        <span class="kicker">02</span>
+        <h3>Local and global discovery</h3>
+        <p>Find causes around you or follow projects across borders from a feed tuned to participation.</p>
+      </article>
+      <article class="feature feature--dark" data-reveal>
+        <span class="kicker">03</span>
+        <h3>Transparent progress</h3>
+        <p>Two signals tell the full story: what is funded and what is powered by people.</p>
+      </article>
+      <article class="feature" data-reveal>
+        <span class="kicker">04</span>
+        <h3>Creator dashboard</h3>
+        <p>Pool Starters can see what is moving, what is stuck and what action to ask for next.</p>
+      </article>
+      <article class="feature feature--color" data-reveal>
+        <div class="color-system" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section product-proof">
+    <div class="container product-proof__grid">
+      <div data-reveal>
+        <p class="eyebrow">Product evidence</p>
+        <h2>Real app surfaces, cleaned up and correctly framed.</h2>
+        <p class="lead">The stills now support the story instead of carrying the whole website. Each one has a clear role in the product narrative.</p>
+      </div>
+      <div class="product-stills" data-reveal-group>
+        <article class="still" data-reveal>
+          <img src="assets/product/still-explore.webp" alt="Poola Explore screen showing top Pools and recommended Pools" width="428" height="926" loading="lazy">
+          <h3>Explore</h3>
+        </article>
+        <article class="still" data-reveal>
+          <img src="assets/product/still-updates.webp" alt="Poola Updates screen showing saved Pools and campaign updates" width="428" height="926" loading="lazy">
+          <h3>Follow</h3>
+        </article>
+        <article class="still" data-reveal>
+          <img src="assets/product/still-dashboard.webp" alt="Poola Dashboard screen showing progress and campaign analytics" width="428" height="926" loading="lazy">
+          <h3>Manage</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section product-proof-detail">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Pool Page proof</p>
+      <h2>The whole Poola thesis in one product surface.</h2>
+      <p class="lead">The Pool Page shows why Poola is bigger than checkout: funds, skills, volunteers, petitions, resources, updates, maps, facts, comments and reporting all live together.</p>
+    </div>
+    <div class="container pool-page-showcase pool-page-showcase--scroll" data-pool-proof-scroll>
+      <div class="pool-page-phone-column">
+        <figure class="pool-page-frame" data-reveal>
+          <img data-pool-proof-image src="assets/product/pool-page-social-good-overview.png" alt="Poola social good Pool Page showing funding progress, contribution abilities, map, Poolers, comments, facts and report controls" width="640" height="5129" loading="lazy">
+          <figcaption>Scroll the proof cards to move through the Pool Page.</figcaption>
+        </figure>
+      </div>
+      <div class="pool-page-notes pool-page-notes--story" data-reveal-group>
+        <article class="is-active" data-reveal data-pool-proof-step data-screen-progress="0"><span>01</span><i class="fa-solid fa-coins"></i><h3>Funds</h3><p>Financial progress sits beside the rest of the support a Pool needs.</p></article>
+        <article data-reveal data-pool-proof-step data-screen-progress="0.12"><span>02</span><i class="fa-solid fa-screwdriver-wrench"></i><h3>Skills</h3><p>People can offer specific expertise like IT, design, accounting or mentoring.</p></article>
+        <article data-reveal data-pool-proof-step data-screen-progress="0.24"><span>03</span><i class="fa-solid fa-hand-holding-heart"></i><h3>Volunteering</h3><p>Time becomes a visible contribution with dates, roles and commitments.</p></article>
+        <article data-reveal data-pool-proof-step data-screen-progress="0.38"><span>04</span><i class="fa-solid fa-signature"></i><h3>Petitions</h3><p>Voice and public support can be collected from the same Pool Page.</p></article>
+        <article data-reveal data-pool-proof-step data-screen-progress="0.52"><span>05</span><i class="fa-solid fa-box-open"></i><h3>Resources</h3><p>Physical items and supplies are treated as first-class contribution types.</p></article>
+        <article data-reveal data-pool-proof-step data-screen-progress="0.68"><span>06</span><i class="fa-solid fa-map-location-dot"></i><h3>Maps</h3><p>Local context makes a Pool easier to understand, trust and join.</p></article>
+        <article data-reveal data-pool-proof-step data-screen-progress="0.84"><span>07</span><i class="fa-solid fa-comments"></i><h3>Comments</h3><p>Supporters can see social proof and campaign conversation in context.</p></article>
+        <article data-reveal data-pool-proof-step data-screen-progress="1"><span>08</span><i class="fa-solid fa-shield-heart"></i><h3>Reporting</h3><p>Safety controls stay visible without getting in the way of contribution.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--color pool-intelligence" id="ai">
+    <div class="container intelligence-grid">
+      <div data-reveal>
+        <p class="eyebrow">AI-native Poola</p>
+        <h2>AI should turn intent into trusted action.</h2>
+        <p class="lead">Poola’s AI direction is practical: help people start better Pools, ask for the right People Power, keep updates clear and make trust work visible, faster, and easier to verify.</p>
+      </div>
+      <div class="intelligence-list" data-reveal-group>
+        <article data-reveal><span>Launch candidate</span><h3>Start from a conversation</h3><p>Describe a need in natural language and let Poola shape the first campaign structure.</p></article>
+        <article data-reveal><span>Launch candidate</span><h3>Draft the full Pool</h3><p>Generate goals, story, contribution types, timelines, risks and next steps for human review.</p></article>
+        <article data-reveal><span>Launch candidate</span><h3>Suggest People Power</h3><p>Turn a problem into concrete asks for volunteers, skills, resources, signatures, attendance and funds.</p></article>
+        <article data-reveal><span>Prototype</span><h3>Guide updates</h3><p>Help Pool Starters turn messy progress into clear public updates with the right next action.</p></article>
+        <article data-reveal><span>Prototype</span><h3>Surface trust signals</h3><p>Use evidence, reporting, status changes and anomaly signals to highlight what needs human attention.</p></article>
+        <article data-reveal><span>Future system</span><h3>Prepare for AI assistants</h3><p>Make Poola usable from AI tools so campaigns can start where people already explain what they need.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trust-architecture">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">AI and trust</p>
+      <h2>Trust stays human, but the work becomes more visible.</h2>
+      <p class="lead">AI can help organise evidence, find missing context and surface risk signals. Humans still own decisions, approvals, funds, accountability and review.</p>
+    </div>
+    <div class="container trust-grid" data-reveal-group>
+      <article data-reveal><i class="fa-solid fa-list-check"></i><h3>Evidence checklist</h3><p>Poola can show what proof exists, what is missing and what needs to be reviewed before a Pool is trusted.</p></article>
+      <article data-reveal><i class="fa-solid fa-triangle-exclamation"></i><h3>Risk signals</h3><p>Reports, anomalies, overdue updates and unclear claims can become visible signals instead of hidden uncertainty.</p></article>
+      <article data-reveal><i class="fa-solid fa-user-shield"></i><h3>Human accountability</h3><p>AI supports the workflow, but Pool Starters, reviewers and payment providers remain part of the trust chain.</p></article>
+    </div>
+    <div class="container feature-link-strip" data-reveal>
+      <p>AI makes trust work visible, faster, and easier to verify. It does not guarantee trust.</p>
+      <div>
+        <a class="btn btn--primary" href="trust-status.html" data-magnetic>View trust states</a>
+        <a class="btn btn--ghost" href="features.html">Feature map</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing-section">
+    <div class="container pricing-grid">
+      <div data-reveal>
+        <p class="eyebrow">Pricing preview</p>
+        <h2>Money should be clear before anyone contributes.</h2>
+        <p class="lead">Poola keeps the money path understandable while treating non-financial help as first-class contribution, not a side note.</p>
+      </div>
+      <div class="pricing-card" data-reveal="right">
+        <span>Platform fee</span>
+        <strong>2.9% + 6 SEK</strong>
+        <p>Per transaction. No hidden subscription, no surprise campaign fee, and no platform fee on People Power.</p>
+        <div class="cta-actions">
+          <a class="btn btn--primary" href="pricing.html" data-magnetic>Open pricing</a>
+          <a class="btn btn--ghost" href="features.html">Product features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section audience">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Who it serves</p>
+      <h2>One audience, many kinds of momentum.</h2>
+    </div>
+    <div class="container audience__grid" data-reveal-group>
+      <article class="audience-card" data-reveal>
+        <span class="dot dot--green"></span>
+        <h3>Communities and causes</h3>
+        <p>Raise money, recruit volunteers, collect supplies and keep supporters close.</p>
+      </article>
+      <article class="audience-card" data-reveal>
+        <span class="dot dot--coral"></span>
+        <h3>Creators and projects</h3>
+        <p>Build a crowd around the work, not just a one-off campaign page.</p>
+      </article>
+      <article class="audience-card" data-reveal>
+        <span class="dot dot--ink"></span>
+        <h3>Startups and teams</h3>
+        <p>Validate, recruit, fund and activate early believers from one place.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-hero about-hero" id="about">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> About Poola</p>
+        <h2>We believe support should compound.</h2>
+        <p class="hero__sub">Many small actions can become a movement when they are visible, trusted and easy to join. Poola is built for that moment.</p>
+      </div>
+      <div class="about-visual about-visual--color" data-reveal="right" aria-label="Funds and People Power system preview">
+        <div class="system-card system-card--dark"><span>Funds</span><strong>Financial progress</strong></div>
+        <div class="system-card"><span>People Power</span><strong>Skills, time, voice</strong></div>
+        <div class="system-card system-card--accent"><span>Result</span><strong>One visible movement</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mission-section">
+    <div class="container mission-grid">
+      <div data-reveal>
+        <p class="eyebrow">Mission</p>
+        <h2>Make it easier for people to back the things they want to exist.</h2>
+      </div>
+      <div class="copy-stack" data-reveal>
+        <p>Poola started from a simple frustration: most crowd-sourcing tools only measure money, even when the real momentum is much broader.</p>
+        <p>We are building a platform where funds, skills, resources, time and voice can all be part of the same campaign, with transparent progress and an experience people actually want to return to.</p>
+      </div>
+    </div>
+    <div class="container company-stats" data-reveal-group>
+      <article data-reveal><strong>2</strong><span>core signals: Funds and People Power</span></article>
+      <article data-reveal><strong>6</strong><span>ways to contribute beyond a single payment path</span></article>
+      <article data-reveal><strong>1</strong><span>home for causes, creators, communities and teams</span></article>
+    </div>
+  </section>
+
+  <section class="section section--color">
+    <div class="container why-now">
+      <div data-reveal>
+        <p class="eyebrow">Why now</p>
+        <h2>Crowd-sourcing is ready for its next interface.</h2>
+      </div>
+      <div class="why-now__cards" data-reveal-group>
+        <article data-reveal>
+          <span>01</span>
+          <h3>People want agency</h3>
+          <p>Supporters increasingly want to take part, not disappear after checkout.</p>
+        </article>
+        <article data-reveal>
+          <span>02</span>
+          <h3>Projects need more than capital</h3>
+          <p>Good ideas often stall because they lack people, spaces, skills or trust.</p>
+        </article>
+        <article data-reveal>
+          <span>03</span>
+          <h3>Trust needs better signals</h3>
+          <p>Visible updates and multi-dimensional progress help people believe momentum is real.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section principles-section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Operating principles</p>
+      <h2>Clean, useful, transparent.</h2>
+    </div>
+    <div class="container principles" data-reveal-group>
+      <article data-reveal>
+        <i class="fa-solid fa-layer-group"></i>
+        <h3>Momentum should be visible</h3>
+        <p>People support what they can understand. Poola turns progress into clear signals.</p>
+      </article>
+      <article data-reveal>
+        <i class="fa-solid fa-shield-heart"></i>
+        <h3>Trust is product work</h3>
+        <p>Updates, accountability and honest contribution states are part of the interface.</p>
+      </article>
+      <article data-reveal>
+        <i class="fa-solid fa-people-group"></i>
+        <h3>Participation should feel natural</h3>
+        <p>The right action should be obvious whether someone can fund, help, share or show up.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section roadmap-section">
+    <div class="container roadmap-grid">
+      <div data-reveal>
+        <p class="eyebrow">Roadmap</p>
+        <h2>Building toward the relaunch.</h2>
+        <p class="lead">The next phase is focused on trust, clarity and a launch group that can test real Pools end to end.</p>
+      </div>
+      <div class="roadmap" data-reveal-group>
+        <article data-reveal><span>Now</span><h3>Private beta</h3><p>Sharpen the product story, flows and first audience.</p></article>
+        <article data-reveal><span>Next</span><h3>First Pools</h3><p>Launch with curated campaigns that prove Funds plus People Power.</p></article>
+        <article data-reveal><span>Then</span><h3>Public opening</h3><p>Invite more creators, communities and backers into the platform.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--color">
+    <div class="container roadmap-grid">
+      <div data-reveal>
+        <p class="eyebrow">Investor pathway</p>
+        <h2>AI-native crowd-sourcing can become infrastructure.</h2>
+        <p class="lead">The investment story is not another campaign page. It is a platform layer for intent, contribution, trust, updates and repeat participation.</p>
+      </div>
+      <div class="roadmap" data-reveal-group>
+        <article data-reveal><span>Wedge</span><h3>Start with trusted Pools</h3><p>Launch where money and People Power are both needed: local causes, creators, partners and urgent community action.</p></article>
+        <article data-reveal><span>Moat</span><h3>Compound participation</h3><p>Every Pool can grow the network of supporters, skills, evidence, updates and recurring trust signals.</p></article>
+        <article data-reveal><span>Layer</span><h3>Pool Intelligence</h3><p>AI helps the platform become easier to start, easier to understand and easier to verify as activity grows.</p></article>
+      </div>
+    </div>
+    <div class="container feature-link-strip" data-reveal>
+      <p>For the market, moat and funding story, use the investor page.</p>
+      <div>
+        <a class="btn btn--primary" href="investors.html" data-magnetic>Investor story</a>
+        <a class="btn btn--ghost" href="trust-status.html">Trust layer</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section founder-section">
+    <div class="container founder-card" data-reveal>
+      <div class="founder-mark">
+        <img src="assets/logo-mark.svg" alt="">
+      </div>
+      <div>
+        <p class="eyebrow">Founder note</p>
+        <h2>Poola is being rebuilt with the patience a trust product deserves.</h2>
+        <p>The goal is not another campaign page. It is a calm, modern place where people can understand what is needed, contribute in the way they can, and see their support join something bigger.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta" id="download">
+    <div class="container final-cta__inner" data-reveal>
+      <p class="signal"><span></span> Get Poola</p>
+      <h2>Open Poola wherever the need starts.</h2>
+      <p>Poola is being prepared for browser, mobile and desktop, with an AI-native direction for starting trusted Pools from conversations.</p>
+      <div class="cta-actions">
+        <a class="btn btn--primary" href="#downloads" data-magnetic>View downloads</a>
+        <a class="btn btn--ghost btn--on-dark" href="#how-it-works">How it works</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section download-hub" id="downloads">
+    <div class="container download-hub__head" data-reveal>
+      <h2>Choose your platform.</h2>
+    </div>
+    <div class="container download-grid" data-reveal-group>
+      <article class="download-card download-card--web" data-reveal>
+        <i class="fa-solid fa-globe"></i>
+        <button class="share-chip" type="button" data-share-platform="Web" aria-label="Share Poola for Web"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+        <span>Browser</span>
+        <h3>Poola for Web</h3>
+        <p>Start from any modern browser with the same Funds plus People Power model.</p>
+        <button class="btn btn--primary" type="button" data-download="Web">Open in web</button>
+      </article>
+      <article class="download-card download-card--featured" data-reveal>
+        <i class="fa-brands fa-apple"></i>
+        <button class="share-chip" type="button" data-share-platform="iOS" aria-label="Share Poola for iOS"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+        <span>iPhone and iPad</span>
+        <h3>Poola for iOS</h3>
+        <p>Designed for discovering, backing and following Pools on the go.</p>
+        <button class="btn btn--primary" type="button" data-download="iOS">Download</button>
+      </article>
+      <article class="download-card download-card--android" data-reveal>
+        <i class="fa-brands fa-android"></i>
+        <button class="share-chip" type="button" data-share-platform="Android" aria-label="Share Poola for Android"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+        <span>Android phones</span>
+        <h3>Poola for Android</h3>
+        <p>The same People Power model for Android supporters and Pool Starters.</p>
+        <button class="btn btn--ghost" type="button" data-download="Android">Download</button>
+      </article>
+      <article class="download-card" data-reveal>
+        <i class="fa-brands fa-windows"></i>
+        <span>Desktop</span>
+        <h3>Poola for Windows</h3>
+        <p>Manage Pools, review progress and coordinate community action.</p>
+        <a class="btn btn--ghost" href="contributors.html">In the works</a>
+      </article>
+      <article class="download-card" data-reveal>
+        <i class="fa-brands fa-apple"></i>
+        <span>Desktop</span>
+        <h3>Poola for macOS</h3>
+        <p>A focused desktop workspace for running campaigns with clarity.</p>
+        <a class="btn btn--ghost" href="contributors.html">In the works</a>
+      </article>
+      <article class="download-card" data-reveal>
+        <i class="fa-brands fa-linux"></i>
+        <span>Desktop</span>
+        <h3>Poola for Linux</h3>
+        <p>Built for operators and teams who want Poola on their own machines.</p>
+        <a class="btn btn--ghost" href="contributors.html">In the works</a>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,10 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Contact Poola";
+const description = "Contact Poola for support, partnerships, press, investor and security questions.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero policy-hero"><div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div><div class="container page-hero__grid"><div data-reveal><p class="signal"><span></span> Contact</p><h1>Get in touch.</h1><p class="hero__sub">One clean contact page for support, partnerships, press, investors and security questions.</p></div></div></section>
+  <section class="section"><div class="container contact-grid" data-reveal-group><article class="contact-card" data-reveal><i class="fa-solid fa-life-ring"></i><h2>Support</h2><p>Questions about accounts, Pool pages, contributions or deletion requests.</p><a href="mailto:info@poola.io?subject=Poola%20support">info@poola.io</a></article><article class="contact-card" data-reveal><i class="fa-solid fa-handshake"></i><h2>Partnerships</h2><p>For organisations, communities and launch partners interested in contribution matching or first Pools.</p><a href="mailto:info@poola.io?subject=Poola%20partnership">info@poola.io</a></article><article class="contact-card" data-reveal><i class="fa-solid fa-newspaper"></i><h2>Press</h2><p>Media questions, founder background, product screenshots and story requests.</p><a href="mailto:info@poola.io?subject=Poola%20press">info@poola.io</a></article><article class="contact-card" data-reveal><i class="fa-solid fa-shield"></i><h2>Security</h2><p>Responsible disclosure and security concerns. Please include “Security report” in the subject line.</p><a href="mailto:info@poola.io?subject=Security%20report">info@poola.io</a></article></div></section>
+</BaseLayout>

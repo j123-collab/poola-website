@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola Features - The crowd-sourcing operating system";
+const description = "Explore Poola's planned competitive feature set: commitments, CRM, updates, scheduling, recurring support, widgets, fee clarity and trust statuses.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero feature-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> Feature map</p>
+        <h1>The crowd-sourcing operating system.</h1>
+        <p class="hero__sub">Poola should not stop at the pledge. The feature direction adds the tools Pool Starters, Poolers and partners need to keep money, people and proof moving.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="pool-starters.html" data-magnetic>For Pool Starters</a>
+          <a class="btn btn--ghost" href="partners.html">Partner features</a>
+        </div>
+      </div>
+      <div class="feature-orbit" data-reveal="right" aria-label="Poola operating system preview">
+        <div class="feature-orbit__core"><strong>Poola</strong><span>Funds + People Power</span></div>
+        <span>CRM</span>
+        <span>Updates</span>
+        <span>Schedule</span>
+        <span>Status</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Competitive gap list</p>
+      <h2>Everything Poola should add around the campaign page.</h2>
+      <p class="lead">These are public-facing product promises and launch candidates, written so the site can show the larger platform vision now.</p>
+    </div>
+    <div class="container feature-tabs-shell" data-feature-tabs data-reveal>
+      <div class="feature-tab-list" role="tablist" aria-label="Poola feature ideas">
+        <button class="feature-tab is-active" type="button" data-feature-key="commitments">Commitments</button>
+        <button class="feature-tab" type="button" data-feature-key="crm">Starter CRM</button>
+        <button class="feature-tab" type="button" data-feature-key="updates">Action updates</button>
+        <button class="feature-tab" type="button" data-feature-key="schedule">Scheduling</button>
+        <button class="feature-tab" type="button" data-feature-key="targets">Targets</button>
+        <button class="feature-tab" type="button" data-feature-key="recurring">Recurring</button>
+        <button class="feature-tab" type="button" data-feature-key="fees">Fee clarity</button>
+        <button class="feature-tab" type="button" data-feature-key="late">Late support</button>
+        <button class="feature-tab" type="button" data-feature-key="widgets">Widgets</button>
+        <button class="feature-tab" type="button" data-feature-key="status">Trust states</button>
+      </div>
+      <article class="feature-tab-panel">
+        <span data-feature-stage>Launch candidate</span>
+        <h3 data-feature-title>Commitment management</h3>
+        <p data-feature-copy>Track every promise after someone offers money, time, skills, resources or voice, so a Pool Starter can follow up without losing people in scattered messages.</p>
+        <div class="feature-panel-meta">
+          <div><strong data-feature-owner>Pool Starters</strong><em>Primary user</em></div>
+          <div><strong data-feature-signal>Fewer dropped offers</strong><em>Success signal</em></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--color">
+    <div class="container competitive-ledger">
+      <div data-reveal>
+        <p class="eyebrow">After the pledge</p>
+        <h2>The work competitors often leave behind.</h2>
+        <p class="lead">Crowdfunding platforms are strong at collecting money. Poola can be stronger at coordinating what happens after support appears.</p>
+      </div>
+      <div class="competitive-grid" data-reveal-group>
+        <article data-reveal><i class="fa-solid fa-clipboard-check"></i><h3>Commitment ledger</h3><p>Every pledge, offer and promise gets a state: new, accepted, scheduled, completed or released.</p></article>
+        <article data-reveal><i class="fa-solid fa-address-book"></i><h3>Pool Starter CRM</h3><p>Pool Starters can segment Poolers by contribution type, location, status and next action.</p></article>
+        <article data-reveal><i class="fa-solid fa-bullhorn"></i><h3>Action-driven updates</h3><p>Updates should end with a clear next step: fund, volunteer, sign, bring, attend or share.</p></article>
+        <article data-reveal><i class="fa-solid fa-calendar-check"></i><h3>Volunteer scheduling</h3><p>Time-based help becomes real roles, shifts, dates and confirmation states.</p></article>
+        <article data-reveal><i class="fa-solid fa-bullseye"></i><h3>Decision-maker targets</h3><p>Petitions and civic Pools can show who needs to hear the community signal.</p></article>
+        <article data-reveal><i class="fa-solid fa-arrows-rotate"></i><h3>Recurring support</h3><p>Poolers can keep backing an ongoing cause, creator or local effort without restarting trust.</p></article>
+        <article data-reveal><i class="fa-solid fa-calculator"></i><h3>Fee clarity</h3><p>Every money path should make the Poola fee visible before people contribute.</p></article>
+        <article data-reveal><i class="fa-solid fa-clock-rotate-left"></i><h3>Late contributions</h3><p>Successful Pools can keep accepting help when the need continues after the deadline.</p></article>
+        <article data-reveal><i class="fa-solid fa-code"></i><h3>Widgets and embeds</h3><p>Newsrooms, partners and communities can make stories immediately actionable.</p></article>
+        <article data-reveal><i class="fa-solid fa-shield-heart"></i><h3>Trust statuses</h3><p>Verified, pending, overdue, under review and fulfilled states keep risk visible.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section feature-pipeline">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Build posture</p>
+      <h2>Ambitious, but labelled honestly.</h2>
+      <p class="lead">The website can show the whole product ambition while separating ready surfaces from prototypes and future systems.</p>
+    </div>
+    <div class="container pipeline-grid" data-reveal-group>
+      <article data-reveal><span>Launch candidate</span><h3>Starter CRM + commitments</h3><p>The strongest near-term feature set because it directly helps every Pool Starter operate.</p></article>
+      <article data-reveal><span>Prototype</span><h3>Fee calculator + trust states</h3><p>Lightweight website demos can explain the behavior before production systems exist.</p></article>
+      <article data-reveal><span>Partner pilot</span><h3>Widgets + matching</h3><p>Best tested with a few real partners before becoming a broad self-serve product.</p></article>
+      <article data-reveal><span>Future layer</span><h3>Pool Intelligence</h3><p>Use AI where it improves discovery, update quality, translation and safety signals.</p></article>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container final-cta__inner" data-reveal>
+      <p class="signal"><span></span> Feature paths</p>
+      <h2>Split the story by audience.</h2>
+      <p>Pool Starters need operations. Partners need distribution and matching. Poolers need transparent trust.</p>
+      <div class="cta-actions">
+        <a class="btn btn--primary" href="pool-starters.html" data-magnetic>Pool Starter tools</a>
+        <a class="btn btn--ghost btn--on-dark" href="trust-status.html">Trust status</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

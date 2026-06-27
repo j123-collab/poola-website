@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola Partners - Matching, widgets and responder Pools";
+const description = "Poola partner programs for contribution matching, news widgets, First Responder Pools, decision-maker campaigns and partner metrics.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="page-hero partner-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> Partner programs</p>
+        <h1>Turn attention into coordinated action.</h1>
+        <p class="hero__sub">Poola can help organisations, publishers and local networks connect matching budgets, urgent stories and community action in one visible Pool.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#partner-programs" data-magnetic>Partner ideas</a>
+          <a class="btn btn--ghost" href="trust-status.html">Trust states</a>
+        </div>
+      </div>
+      <div class="partner-widget-preview" data-reveal="right" aria-label="Poola partner widget preview">
+        <span>Embedded Pool</span>
+        <h3>Flood relief volunteers</h3>
+        <div class="widget-meter"><b style="width:68%"></b></div>
+        <p>68% funded. 42 volunteer shifts open.</p>
+        <button type="button">Contribute with Poola</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="partner-programs">
+    <div class="container section-head center" data-reveal>
+      <p class="eyebrow eyebrow--center">Partner features</p>
+      <h2>Programs that make Poola bigger than a campaign link.</h2>
+      <p class="lead">These partner-facing ideas turn distribution, urgency and matching budgets into product surfaces.</p>
+    </div>
+    <div class="container partner-program-grid" data-reveal-group>
+      <article data-reveal><i class="fa-solid fa-handshake-angle"></i><span>Launch candidate</span><h3>Contribution matching</h3><p>Organisations can match money or People Power commitments to create visible momentum.</p></article>
+      <article data-reveal><i class="fa-solid fa-newspaper"></i><span>Partner pilot</span><h3>News widgets</h3><p>Publishers can embed a Pool beside a relevant story so readers can act immediately.</p></article>
+      <article data-reveal><i class="fa-solid fa-truck-medical"></i><span>Urgent pathway</span><h3>First Responder Pools</h3><p>Emergency or relief Pools can be surfaced quickly with clear trust and status labels.</p></article>
+      <article data-reveal><i class="fa-solid fa-bullseye"></i><span>Civic action</span><h3>Decision-maker targets</h3><p>Petition and advocacy Pools can show who needs to receive the community signal.</p></article>
+      <article data-reveal><i class="fa-solid fa-chart-simple"></i><span>Reporting layer</span><h3>Partner metrics</h3><p>Track matched funds, volunteer commitments, signatures, completion proof and referral lift.</p></article>
+      <article data-reveal><i class="fa-solid fa-people-group"></i><span>Local launch</span><h3>Network chapters</h3><p>Schools, municipalities, nonprofits and creator groups can run dense local launch clusters.</p></article>
+    </div>
+  </section>
+
+  <section class="section section--color">
+    <div class="container widget-system">
+      <div data-reveal>
+        <p class="eyebrow">Widgets and embeds</p>
+        <h2>A story should be able to become a Pool.</h2>
+        <p class="lead">The widget direction is simple: show the need, show trust status, and make the next contribution type obvious.</p>
+      </div>
+      <div class="widget-stack" data-reveal-group>
+        <article data-reveal><span>01</span><h3>Context</h3><p>Show the article, partner or local event that explains why the Pool matters now.</p></article>
+        <article data-reveal><span>02</span><h3>Action</h3><p>Let readers fund, volunteer, sign, offer resources or share from the embedded surface.</p></article>
+        <article data-reveal><span>03</span><h3>Trust</h3><p>Display verified, pending, urgent or under-review states before people contribute.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container partner-metrics-grid">
+      <div data-reveal>
+        <p class="eyebrow">Partner reporting</p>
+        <h2>Measure more than money.</h2>
+      </div>
+      <div class="partner-metric-cards" data-reveal-group>
+        <article data-reveal><strong>SEK</strong><span>Matched funds and direct contribution totals.</span></article>
+        <article data-reveal><strong>Hours</strong><span>Volunteer commitments, scheduled shifts and completed help.</span></article>
+        <article data-reveal><strong>Voice</strong><span>Signatures, comments, shares and decision-maker signals.</span></article>
+        <article data-reveal><strong>Proof</strong><span>Updates, completion evidence and status changes.</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container final-cta__inner" data-reveal>
+      <p class="signal"><span></span> Partner next step</p>
+      <h2>Build partner programs around trust, not banner ads.</h2>
+      <p>The partner story is strongest when a campaign can move from awareness to action to proof.</p>
+      <div class="cta-actions">
+        <a class="btn btn--primary" href="contact.html" data-magnetic>Contact Poola</a>
+        <a class="btn btn--ghost btn--on-dark" href="features.html">All features</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Poola Store - Now part of Contributors";
+const description = "Poola Store files now live inside the Contributors page as ways to spread the word and make Poola visible in the real world.";
+const robots = "noindex";
+const canonical = "contributors.html#spread-the-word";
+---
+
+<BaseLayout title={title} description={description} robots={robots} canonical={canonical}>
+  <section class="page-hero policy-hero">
+    <div class="stripe-field stripe-field--small" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container page-hero__grid">
+      <div data-reveal>
+        <p class="signal"><span></span> Store moved</p>
+        <h1>Store is now part of Contributors.</h1>
+        <p class="hero__sub">The free maker files now sit with the contributor story, because spreading the word is one of the ways people can help Poola grow.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="contributors.html#spread-the-word" data-magnetic>Open spread-the-word files</a>
+          <a class="btn btn--ghost" href="contributors.html">Contributors</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

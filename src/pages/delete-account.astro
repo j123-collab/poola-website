@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Delete your Poola account";
+const description = "How to delete your Poola account and the data that is removed when you do.";
+---
+
+<BaseLayout title={title} description={description}>
+<section class="section">
+  <div class="container" style="max-width:720px;">
+    <h1 class="balance" style="font-size:clamp(2rem,4.6vw,3.2rem);margin:40px 0 20px;">Delete your Poola account</h1>
+    <p style="margin-bottom:24px;">You can delete your Poola account and its data at any time, directly in the app:</p>
+    <ol style="line-height:2;margin:0 0 28px 20px;">
+      <li>Open the Poola app and sign in</li>
+      <li>Go to <strong>Settings &rarr; Delete account</strong></li>
+      <li>Confirm — deletion takes effect immediately</li>
+    </ol>
+
+    <h2 class="h2" style="font-size:1.4rem;margin:28px 0 12px;">What gets deleted</h2>
+    <p style="margin-bottom:16px;">Your sign-in account is permanently removed and your profile is anonymized:
+    name, email address, phone number, biography and profile photo are erased. You will no longer be able to
+    sign in, and your personal information is no longer associated with any activity.</p>
+
+    <h2 class="h2" style="font-size:1.4rem;margin:28px 0 12px;">What is kept</h2>
+    <p style="margin-bottom:16px;">Records that other people depend on — pools you created and contributions
+    made to them — remain, attributed to an anonymized account, so that backers' contribution history and the
+    integrity of completed campaigns is preserved. Financial transaction records are retained as required by
+    bookkeeping and anti-money-laundering law (processed by Stripe).</p>
+
+    <h2 class="h2" style="font-size:1.4rem;margin:28px 0 12px;">Can't access the app?</h2>
+    <p style="margin-bottom:40px;">Email <a href="mailto:info@poola.io">info@poola.io</a> from the address on
+    your account and we will process the deletion manually within 30 days.</p>
+  </div>
+</section>
+</BaseLayout>
